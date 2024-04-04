@@ -37,13 +37,13 @@
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="/process-solutions" data-bs-toggle="dropdown" aria-expanded="false">Process Solutions</a>
+              <a class="nav-link dropdown-toggle" href="/process-solutions" data-bs-toggle="dropdown"  aria-expanded="false">Process Solutions</a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="/process-solutions/liguidos">Líquidos</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Equipamiento</a>
+              <a class="nav-link dropdown-toggle" href="/equipamiento" data-bs-toggle="dropdown"  aria-expanded="false">Equipamiento</a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Action</a></li>
                 <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -51,7 +51,7 @@
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Mercados</a>
+              <a class="nav-link dropdown-toggle" href="/mercados" data-bs-toggle="dropdown" aria-expanded="false">Mercados</a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="/mercados/frutas-y-verduras/">Frutas y verduras</a></li>
                 <li><a class="dropdown-item" href="/mercados/bebidas">Bebidas</a></li>
@@ -64,7 +64,7 @@
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Proyectos</a>
+              <a class="nav-link dropdown-toggle" href="/proyectos" data-bs-toggle="dropdown"  aria-expanded="false">Proyectos</a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Action</a></li>
                 <li><a class="dropdown-item" href="#">Another action</a></li>

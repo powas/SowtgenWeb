@@ -1,3 +1,13 @@
+$(document).ready(function () {
+    $('.navbar .navbar-nav > li.dropdown').hover(function () {
+        $('ul.dropdown-menu', this).stop(true, true).slideDown('fast');
+        $(this).addClass('open');
+    }, function () {
+        $('ul.dropdown-menu', this).stop(true, true).slideUp('fast');
+        $(this).removeClass('open');
+    });
+});
+
 $('.owl-brands').owlCarousel({
     loop:true,
     autoplay: true,

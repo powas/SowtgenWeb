@@ -25,7 +25,7 @@ include($_SERVER["DOCUMENT_ROOT"] . '/header.php');
     </div>
     <div class="container-fluid fullheight g-0 pe-none">
       <div class="row">
-        <div class="col-lg-5 ms-auto rounded-start-pill" style="background-image: url(/img/ingenieria-1200x800.jpg);background-size:cover;background-position:center;">
+        <div class="col-lg-5 ms-auto rounded-start-pill" style="background-image: url(/img/montajes-electromecanicos-1200x800.jpg);background-size:cover;background-position:center;">
         </div>
       </div>
     </div>
@@ -57,31 +57,31 @@ include($_SERVER["DOCUMENT_ROOT"] . '/header.php');
       <div class="row justify-content-center gy-4">
         <div class="col-6 col-md-4 col-xxl">
             <a href="/ingenieria-y-obras/ingenieria" class="interest-box">
-              <img src="/img/ingenieria-1200x800.jpg" alt="Ingeniería" title="Ingeniería" class="img-fluid">
+              <img src="/img/montajes-electromecanicos-600x400.jpg" alt="Ingeniería" title="Ingeniería" class="img-fluid">
               <h6 class="m-3">Ingeniería</h6>
             </a>
         </div>
         <div class="col-6 col-md-4 col-xxl">
             <a href="/ingenieria-y-obras/management" class="interest-box">
-              <img src="/img/ingenieria-1200x800.jpg" alt="Management" title="Management" class="img-fluid">
+              <img src="/img/montajes-electromecanicos-600x400.jpg" alt="Management" title="Management" class="img-fluid">
               <h6 class="m-3">Management</h6>
             </a>
         </div>
         <div class="col-6 col-md-4 col-xxl">
             <a href="/ingenieria-y-obras/fabricacion" class="interest-box">
-              <img src="/img/ingenieria-1200x800.jpg" alt="Fabricación" title="Fabricación" class="img-fluid">
+              <img src="/img/montajes-electromecanicos-600x400.jpg" alt="Fabricación" title="Fabricación" class="img-fluid">
               <h6 class="m-3">Fabricación</h6>
             </a>
         </div>
         <div class="col-6 col-md-4 col-xxl">
             <a href="/ingenieria-y-obras/automatizacion-y-control" class="interest-box">
-              <img src="/img/ingenieria-1200x800.jpg" alt="Automatización y Control" title="Automatización y Control" class="img-fluid">
+              <img src="/img/montajes-electromecanicos-600x400.jpg" alt="Automatización y Control" title="Automatización y Control" class="img-fluid">
               <h6 class="m-3">Automatización y Control</h6>
             </a>
         </div>
         <div class="col-6 col-md-4 col-xxl">
             <a href="/ingenieria-y-obras/mantenimiento" class="interest-box">
-              <img src="/img/ingenieria-1200x800.jpg" alt="Mantenimiento" title="Mantenimiento" class="img-fluid">
+              <img src="/img/montajes-electromecanicos-600x400.jpg" alt="Mantenimiento" title="Mantenimiento" class="img-fluid">
               <h6 class="m-3">Mantenimiento</h6>
             </a>
         </div>
