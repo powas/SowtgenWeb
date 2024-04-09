@@ -34,53 +34,42 @@ include($_SERVER["DOCUMENT_ROOT"] . '/header.php');
       </div>
     </div>
   </section>
-  <section class="py-5 py-lg-6">
+  <section>
     <div class="container">
-      <div class="row">
-        <div class="col-md-7 mx-auto text-center">
-          <h2>Especialistas en</h2>
+      <div class="row align-items-center">
+        <div class="col-lg-6 ms-auto py-5 py-lg-6 circulos">
+          <p>Cuenta con los recursos tecnológicos que les permiten brindar a sus clientes un panorama de alternativas de procesamiento adaptadas a sus requerimientos, prestando especial atención a la construcción y su relación con el medio ambiente.</p>
+          <p>Sus soluciones abarcan desde el diseño de procesos adaptables a equipos existentes o bien, pueden incluir equipos prediseñados por SOWTGEN tales como mezcladores sólido-líquido, mezcladores líquido-líquido, reactores, tanques de almacenamiento, pasteurizadores, clusters de válvulas, disolutores de azúcar, carbonatadores, desaireadores y centrales CIP.</p>
         </div>
       </div>
-      <div class="row gy-5">
-        <div class="col-lg-4 d-flex flex-column align-items-center text-center">
-            <img src="/img/montajes-electromecanicos-600x600.jpg" alt="Ingeniería" title="Ingeniería" class="img-fluid max-width-60per rounded-circle mb-4">
-            <h3 class="mb-4">Ingeniería</h3>
-            <p>Ingenieria SOWTGEN ofrece servicios de ingeniería que abarcan desde estudios de viabilidad hasta desarrollo de arquitectura, incluyendo simulación y automatizaciones.</p>
-            <a href="/ingenieria-y-obras/ingenieria" type="button" class="btn btn-primary mt-auto">Conocer más</a>
-        </div>
-        <div class="col-lg-4 d-flex flex-column align-items-center text-center">
-            <img src="/img/montajes-electromecanicos-600x600.jpg" alt="Management" title="Management" class="img-fluid max-width-60per rounded-circle mb-4">
-            <h3 class="mb-4">Management</h3>
-            <p>Profesionales de Project & Program Management gestionan proyectos, supervisando documentación, presupuesto y cronogramas establecidos en la etapa de ingeniería conceptual.</p>
-            <a href="/ingenieria-y-obras/management" type="button" class="btn btn-primary mt-auto">Conocer más</a>
-        </div>
-        <div class="col-lg-4 d-flex flex-column align-items-center text-center">
-            <img src="/img/montajes-electromecanicos-600x600.jpg" alt="Fabricación" title="Fabricación" class="img-fluid max-width-60per rounded-circle mb-4">
-            <h3 class="mb-4">Fabricación</h3>
-            <p>SOWTGEN tiene una planta propia con tecnología avanzada para fabricar estructuras y sistemas modulares de alta tecnificación.</p>
-            <a href="/ingenieria-y-obras/fabricacion" type="button" class="btn btn-primary mt-auto">Conocer más</a>
-        </div>
-        <div class="col-lg-4 d-flex flex-column align-items-center text-center">
-            <img src="/img/montajes-electromecanicos-600x600.jpg" alt="Montajes Electromecánicos" title="Montajes Electromecánicos" class="img-fluid max-width-60per rounded-circle mb-4">
-            <h3 class="mb-4">Montajes Electromecánicos</h3>
-            <p>Su equipo especializado se enfoca en proyectos de construcción mecánica, eléctrica y automatización, con amplia experiencia en diversas industrias.</p>
-            <a href="/ingenieria-y-obras/montajes-electromecanicos" type="button" class="btn btn-primary mt-auto">Conocer más</a>
-        </div>
-        <div class="col-lg-4 d-flex flex-column align-items-center text-center">
-            <img src="/img/montajes-electromecanicos-600x600.jpg" alt="Automatización y Control" title="Automatización y Control" class="img-fluid max-width-60per rounded-circle mb-4">
-            <h3 class="mb-4">Automatización y Control</h3>
-            <p>Ingenieria La división de montaje industrial se enfoca en construcción mecánica, eléctrica y automatización.</p>
-            <a href="/ingenieria-y-obras/automatizacion-y-control" type="button" class="btn btn-primary mt-auto">Conocer más</a>
-        </div>
-        <div class="col-lg-4 d-flex flex-column align-items-center text-center">
-            <img src="/img/montajes-electromecanicos-600x600.jpg" alt="Mantenimiento" title="Mantenimiento" class="img-fluid max-width-60per rounded-circle mb-4">
-            <h3 class="mb-4">Mantenimiento</h3>
-            <p>Ingenieria SOWTGEN ofrece servicios de mantenimiento de plantas, además de capacitación y diversas metodologías de gestión para reducir costos en áreas de mantenimiento.</p>
-            <a href="/ingenieria-y-obras/mantenimiento" type="button" class="btn btn-primary mt-auto">Conocer más</a>
+    </div>
+    <div class="container-fluid fullheight g-0 pe-none">
+      <div class="row">
+        <div class="col-lg-5 rounded-end-pill" style="background-image: url(/img/montajes-electromecanicos-1200x800.jpg);background-size:cover;background-position:center;">
         </div>
       </div>
     </div>
   </section>
-
+  <section class="py-5 py-lg-6">
+    <div class="container">
+      <div class="row gx-0 gx-lg-4 gy-4">
+      <div class="col-lg grow-box" style="background-image: url(/img/process-solutions-liquidos.jpg)">
+          <a href="">
+            <h2>Líquidos</h2>
+          </a>
+        </div>
+        <div class="col-lg grow-box" style="background-image: url(/img/process-solutions-solidos.jpg)">
+          <a href="">
+            <h2>Sólidos</h2>
+          </a>
+        </div>
+        <div class="col-lg grow-box" style="background-image: url(/img/process-solutions-frutas-y-verduras.jpg)">
+          <a href="">
+            <h2>Frutas y verduras</h2>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
 <?php include($_SERVER["DOCUMENT_ROOT"] . '/footer.php'); ?>

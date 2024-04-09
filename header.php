@@ -39,7 +39,7 @@
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="/process-solutions" data-bs-toggle="dropdown"  aria-expanded="false">Process Solutions</a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="/process-solutions/liguidos">Líquidos</a></li>
+                <li><a class="dropdown-item" href="/process-solutions/liquidos">Líquidos</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">

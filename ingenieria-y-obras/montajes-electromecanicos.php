@@ -17,7 +17,7 @@ include($_SERVER["DOCUMENT_ROOT"] . '/header.php');
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-6 py-5 py-lg-6">
-          <h1>Montajes Electromecanicos</h1>
+          <h1><?php echo $title; ?></h1>
           <p>El equipo especializado de SOWTGEN se enfoca en la gestión de los trabajos de fabricación y construcción electromecánica en base a la calidad y los cronogramas estipulados en la planificación de cada proyecto.</p>
           <p>La división de montaje industrial ejecuta proyectos de construcción mecánica, eléctrica y automatización y control.</p>
         </div>
@@ -52,7 +52,9 @@ include($_SERVER["DOCUMENT_ROOT"] . '/header.php');
   <section class="pb-5 pb-lg-6">
     <div class="container">
       <div class="row">
-        <h2>También podría interesarte</h2>
+        <div class="col">
+          <h2>También podría interesarte</h2>
+        </div>
       </div>
       <div class="row justify-content-center gy-4">
         <div class="col-6 col-md-4 col-xxl">

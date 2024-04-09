@@ -33,9 +33,9 @@ include($_SERVER["DOCUMENT_ROOT"] . '/header.php');
       <div class="row mb-5 mb-lg-6 gy-5">
         <div class="col-lg-4">
           <div class="featured-box">
-            <img src="/img/ingenieria-y-obras-home.jpg" alt="Imagen SOWTGEN Ingeniería y Obras" title="SOWTGEN Ingeniería y Obras" class="img-fluid rounded-1">
+            <img src="/img/home-ingenieria-y-obras.jpg" alt="Imagen SOWTGEN Ingeniería y Obras" title="SOWTGEN Ingeniería y Obras" class="img-fluid rounded-1">
             <div class="featured-logo">
-              <img src="/img/sowtgen-ingenieria-y-obras-logo.svg" alt="SOWTGEN Ingenieria y Obras" title="SOWTGEN Ingenieria y Obras Logo" class="max-width-100per">
+              <img src="/img/sowtgen-ingenieria-y-obras-logo.svg" alt="SOWTGEN Ingenieria y Obras" title="SOWTGEN Ingenieria y Obras Logo" class="img-fluid">
             </div>
             <p>Soluciones integrales de ingeniería para sectores industriales, infraestructura, medioambiente y servicios.</p>
             <a href="/ingenieria-y-obras" type="button" class="btn btn-primary">Conocer más</a>
@@ -43,9 +43,9 @@ include($_SERVER["DOCUMENT_ROOT"] . '/header.php');
         </div>
         <div class="col-lg-4">
           <div class="featured-box">
-            <img src="/img/process-solutions-home.jpg" alt="Imagen SOWTGEN Process Solutions" title="SOWTGEN Process Solutions" class="img-fluid rounded-1">
+            <img src="/img/home-process-solutions.jpg" alt="Imagen SOWTGEN Process Solutions" title="SOWTGEN Process Solutions" class="img-fluid rounded-1">
             <div class="featured-logo">
-              <img src="/img/sowtgen-process-solutions-logo.svg" alt="SOWTGEN Process Solutions" title="SOWTGEN Process Solutions Logo" class="max-width-100per">
+              <img src="/img/sowtgen-process-solutions-logo.svg" alt="SOWTGEN Process Solutions" title="SOWTGEN Process Solutions Logo" class="img-fluid">
             </div>
             <p>Desarrollo de procesos y tecnologías para la producción de alimentos, bebidas y productos de home & personal care.</p>
             <a href="/process-solutions" type="button" class="btn btn-primary">Conocer más</a>
@@ -53,9 +53,9 @@ include($_SERVER["DOCUMENT_ROOT"] . '/header.php');
         </div>
         <div class="col-lg-4">
           <div class="featured-box">
-            <img src="/img/elements-home.jpg" alt="Imagen SOWTGEN Elements" title="SOWTGEN Elements" class="img-fluid rounded-1">
+            <img src="/img/home-elements.jpg" alt="Imagen SOWTGEN Elements" title="SOWTGEN Elements" class="img-fluid rounded-1">
             <div class="featured-logo">
-              <img src="/img/sowtgen-elements-logo.svg" alt="SOWTGEN Elements" title="SOWTGEN Elements Logo" class="max-width-100per">
+              <img src="/img/sowtgen-elements-logo.svg" alt="SOWTGEN Elements" title="SOWTGEN Elements Logo" class="img-fluid">
             </div>
             <p>Breve texto describiendo las soluciones que se le dan a los diferentes mercados en los que opera Sowtgen.</p>
             <a href="/elements" type="button" class="btn btn-primary">Conocer más</a>
