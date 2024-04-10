@@ -24,7 +24,7 @@ main {
 }
 
 .h2, h2 {
-  font-size: 36px;
+  font-size: 30px;
 }
 
 .h3, h3 {
@@ -232,7 +232,7 @@ section {
   width: 160px;
 }
 
-.interest-box {
+.white-box {
   display: block;
   height: 100%;
   background-color: white;
@@ -241,7 +241,7 @@ section {
   color: #111E6C;
   text-decoration: none;
 }
-.interest-box:hover {
+.white-box:hover {
   color: #4579FF;
 }
 

@@ -54,17 +54,17 @@ include($_SERVER["DOCUMENT_ROOT"] . '/header.php');
     <div class="container">
       <div class="row gx-0 gx-lg-4 gy-4">
       <div class="col-lg grow-box" style="background-image: url(/img/process-solutions-liquidos.jpg)">
-          <a href="">
+          <a href="/process-solutions/liquidos/">
             <h2>Líquidos</h2>
           </a>
         </div>
         <div class="col-lg grow-box" style="background-image: url(/img/process-solutions-solidos.jpg)">
-          <a href="">
+          <a href="/process-solutions/solidos/">
             <h2>Sólidos</h2>
           </a>
         </div>
         <div class="col-lg grow-box" style="background-image: url(/img/process-solutions-frutas-y-verduras.jpg)">
-          <a href="">
+          <a href="/process-solutions/frutas-y-verduras/">
             <h2>Frutas y verduras</h2>
           </a>
         </div>

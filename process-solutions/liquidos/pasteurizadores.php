@@ -1,5 +1,5 @@
 <?php
-$title = 'Líquidos';
+$title = 'Pasteurizadores';
 $description = 'Description';
 include($_SERVER["DOCUMENT_ROOT"] . '/header.php');
 ?>

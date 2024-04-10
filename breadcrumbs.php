@@ -7,6 +7,9 @@
     elseif ($currentDirectory == "process-solutions") {
         echo ' <i class="las la-angle-right mx-2"></i> <a href="/process-solutions">Process Solutions</a>';
     }
+    elseif ($currentDirectory == "liquidos") {
+        echo ' <i class="las la-angle-right mx-2"></i> <a href="/process-solutions">Process Solutions</a> <i class="las la-angle-right mx-2"></i> <a href="/process-solutions/liquidos">Líquidos</a>';
+    }
     elseif ($currentDirectory == "mercados") {
         echo ' <i class="las la-angle-right mx-2"></i> <a href="/mercados">Mercados</a>';
     }

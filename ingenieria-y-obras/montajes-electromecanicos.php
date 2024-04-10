@@ -58,31 +58,31 @@ include($_SERVER["DOCUMENT_ROOT"] . '/header.php');
       </div>
       <div class="row justify-content-center gy-4">
         <div class="col-6 col-md-4 col-xxl">
-            <a href="/ingenieria-y-obras/ingenieria" class="interest-box">
+            <a href="/ingenieria-y-obras/ingenieria" class="white-box">
               <img src="/img/montajes-electromecanicos-600x400.jpg" alt="Ingeniería" title="Ingeniería" class="img-fluid">
               <h6 class="m-3">Ingeniería</h6>
             </a>
         </div>
         <div class="col-6 col-md-4 col-xxl">
-            <a href="/ingenieria-y-obras/management" class="interest-box">
+            <a href="/ingenieria-y-obras/management" class="white-box">
               <img src="/img/montajes-electromecanicos-600x400.jpg" alt="Management" title="Management" class="img-fluid">
               <h6 class="m-3">Management</h6>
             </a>
         </div>
         <div class="col-6 col-md-4 col-xxl">
-            <a href="/ingenieria-y-obras/fabricacion" class="interest-box">
+            <a href="/ingenieria-y-obras/fabricacion" class="white-box">
               <img src="/img/montajes-electromecanicos-600x400.jpg" alt="Fabricación" title="Fabricación" class="img-fluid">
               <h6 class="m-3">Fabricación</h6>
             </a>
         </div>
         <div class="col-6 col-md-4 col-xxl">
-            <a href="/ingenieria-y-obras/automatizacion-y-control" class="interest-box">
+            <a href="/ingenieria-y-obras/automatizacion-y-control" class="white-box">
               <img src="/img/montajes-electromecanicos-600x400.jpg" alt="Automatización y Control" title="Automatización y Control" class="img-fluid">
               <h6 class="m-3">Automatización y Control</h6>
             </a>
         </div>
         <div class="col-6 col-md-4 col-xxl">
-            <a href="/ingenieria-y-obras/mantenimiento" class="interest-box">
+            <a href="/ingenieria-y-obras/mantenimiento" class="white-box">
               <img src="/img/montajes-electromecanicos-600x400.jpg" alt="Mantenimiento" title="Mantenimiento" class="img-fluid">
               <h6 class="m-3">Mantenimiento</h6>
             </a>
