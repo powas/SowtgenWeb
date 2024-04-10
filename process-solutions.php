@@ -23,7 +23,7 @@ include($_SERVER["DOCUMENT_ROOT"] . '/header.php');
           <p>La unidad, interviene en proyectos desde el diseño, la construcción e implementación de procesos y tecnologías desarrolladas brindado soluciones de última generación.</p>
         </div>
         <div class="col-lg-6 pb-5 pb-lg-0">
-          <img src="/img/home-hero.png" alt="SOWTGEN" title="SOWTGEN" class="img-fluid">
+          <img src="/img/process-solutions-hero.png" alt="SOWTGEN" title="SOWTGEN" class="img-fluid">
         </div>
       </div>
     </div>

@@ -28,24 +28,3 @@ $('.owl-brands').owlCarousel({
     },
     }
 });
-
-
-//FORM VALIDATE
-$(document).ready(function(){
-    $("#contact-form").validate({
-        ignore: ".ignore",
-        rules: {
-            nombre: {
-                required: true,
-            },
-            email: {
-                required: true,
-                email:true
-            },
-            mensaje: {
-                required: true,
-            }
-        }
-
-    });
-});
