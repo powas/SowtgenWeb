@@ -2,8 +2,9 @@ $color1: #111E6C; /*Azul 1*/
 $color2: #4579FF; /*Azul 2*/
 $color3: #EFF4FF; /*Azul 3*/
 $color4: #F7F7F7; /*Gris*/
-$color5: #FF7A00; /*Naranja*/
-$color6: #e2f5f4; /*Aqua*/
+$color5: #E9E9E9; /*Gris 2*/
+$color6: #FF7A00; /*Naranja*/
+$color7: #e2f5f4; /*Aqua*/
 
 /*Body*/
 body {
@@ -96,6 +97,9 @@ li:not(.nav-item) {
     padding-top: 6rem !important;
     padding-bottom: 6rem !important;
 }
+.pt-6 {
+    padding-top: 6rem !important;
+}
 .pb-6 {
     padding-bottom: 6rem !important;
 }
@@ -109,6 +113,9 @@ li:not(.nav-item) {
     .py-sm-6 {
         padding-top: 6rem !important;
         padding-bottom: 6rem !important;
+    }
+    .pt-sm-6 {
+        padding-top: 6rem !important;
     }
     .pb-sm-6 {
         padding-bottom: 6rem !important;
@@ -125,6 +132,9 @@ li:not(.nav-item) {
         padding-top: 6rem !important;
         padding-bottom: 6rem !important;
     }
+    .pt-md-6 {
+        padding-top: 6rem !important;
+    }
     .pb-md-6 {
         padding-bottom: 6rem !important;
     }
@@ -139,6 +149,9 @@ li:not(.nav-item) {
     .py-lg-6 {
         padding-top: 6rem !important;
         padding-bottom: 6rem !important;
+    }
+    .pt-lg-6 {
+        padding-top: 6rem !important;
     }
     .pb-lg-6 {
         padding-bottom: 6rem !important;
@@ -155,6 +168,9 @@ li:not(.nav-item) {
         padding-top: 6rem !important;
         padding-bottom: 6rem !important;
     }
+    .pt-xl-6 {
+        padding-top: 6rem !important;
+    }
     .pb-xl-6 {
         padding-bottom: 6rem !important;
     }
@@ -169,6 +185,9 @@ li:not(.nav-item) {
     .py-xxl-6 {
         padding-top: 6rem !important;
         padding-bottom: 6rem !important;
+    }
+    .pt-xxl-6 {
+        padding-top: 6rem !important;
     }
     .pb-xxl-6 {
         padding-bottom: 6rem !important;
@@ -189,13 +208,16 @@ li:not(.nav-item) {
 .bg-color3 {
     background-color: $color3;
 }
-.bg-color6 {
-    background-color: $color6;
+.bg-color5 {
+    background-color: $color5;
+}
+.bg-color7 {
+    background-color: $color7;
 }
 section {
     position: relative;
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
     .fullheight {
         height: auto;
         position: absolute;
@@ -208,6 +230,19 @@ section {
             height: 100%;
         }
     }
+    .contentheight {
+        height: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+    }
+    .two-columns {
+        column-count: 2;
+        column-gap: 30px;
+    }
+    
 }
 #breadcrumbs {
     background-color: $color3;
@@ -247,7 +282,7 @@ section {
         display: block;
         width: 80px;
         height: 8px;
-        background-color: $color6;
+        background-color: $color7;
         border-radius: 12px;
     }
 }
@@ -274,6 +309,10 @@ section {
     &:hover {
         color: $color2;
     }
+}
+.product-box {
+    background-color: white;
+    min-height: 680px;
 }
 .circulos {
     position: relative;

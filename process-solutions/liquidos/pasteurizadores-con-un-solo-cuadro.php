@@ -45,21 +45,7 @@ include($_SERVER["DOCUMENT_ROOT"] . '/header.php');
             <div class="col-lg mb-5 mb-lg-0">
                 <div class="bg-color3 rounded-1 h-100 p-4 ">
                     <h2>Características Técnicas</h2>
-                    <ul>
-                        <li>Intercambiador de calor y separador dentro de una misma carcasa</li>
-                        <li>Tecnología de Casco y Placas completamente soldadas</li>
-                        <li>No se requiere cañería externa</li>
-                        <li>Separador de alta eficiencia</li>
-                        <li>Baja carga de refrigerante</li>
-                        <li>Placas circulares</li>
-                        <li>Apto para amoníaco y otros refrigerantes</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg">
-                <div class="bg-color7 rounded-1 h-100 p-4">
-                    <h2>Cualidades</h2>
-                    <ul>
+                    <ul class="two-columns">
                         <li>Intercambiador de calor y separador dentro de una misma carcasa</li>
                         <li>Tecnología de Casco y Placas completamente soldadas</li>
                         <li>No se requiere cañería externa</li>

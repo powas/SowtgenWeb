@@ -16,7 +16,7 @@ include($_SERVER["DOCUMENT_ROOT"] . '/header.php');
   <section class="bg-color3">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-lg-6 py-5 py-lg-6">
+        <div class="col-xl-6 py-5 py-xl-6">
           <h1 class="title-with-line"><?php echo $title; ?></h1>
           <p>El equipo especializado de SOWTGEN se enfoca en la gestión de los trabajos de fabricación y construcción electromecánica en base a la calidad y los cronogramas estipulados en la planificación de cada proyecto.</p>
           <p>La división de montaje industrial ejecuta proyectos de construcción mecánica, eléctrica y automatización y control.</p>
@@ -25,7 +25,7 @@ include($_SERVER["DOCUMENT_ROOT"] . '/header.php');
     </div>
     <div class="container-fluid fullheight g-0 pe-none">
       <div class="row">
-        <div class="col-lg-5 ms-auto rounded-start-pill" style="background-image: url(/img/montajes-electromecanicos-1200x800.jpg);background-size:cover;background-position:center;">
+        <div class="col-xl-5 ms-auto rounded-start-pill" style="background-image: url(/img/montajes-electromecanicos-1200x800.jpg);background-size:cover;background-position:center;">
         </div>
       </div>
     </div>
@@ -33,14 +33,14 @@ include($_SERVER["DOCUMENT_ROOT"] . '/header.php');
   <section class="py-5 py-lg-6">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-lg-11 ms-auto">
+        <div class="col-12 col-xl-11 ms-auto">
           <img src="/img/montajes-electromecanicos-amplia-experiencia.jpg" alt="Amplia Experiencia" title="Amplia Experiencias" class="img-fluid">
         </div>
       </div>
     </div>
     <div class="container fullheight">
       <div class="row align-items-center">
-        <div class="col-lg-6">
+        <div class="col-xl-6">
           <div class="bg-dark text-white p-5">
             <p>SOWTGEN cuenta con una <strong>amplia experiencia</strong> en la ejecución de montajes en industrias alimenticias, químicas y petroquímicas.</p>
             <p>La ejecución de cada proyecto es llevada a cabo por un equipo de profesionales formado por un <strong>project manager, su equipo de ingenieros, supervisores y personal de montaje.</strong></p>
@@ -56,7 +56,7 @@ include($_SERVER["DOCUMENT_ROOT"] . '/header.php');
           <h2>También podría interesarte</h2>
         </div>
       </div>
-      <div class="row justify-content-center gy-4">
+      <div class="row gy-4">
         <div class="col-6 col-md-4 col-xxl">
             <a href="/ingenieria-y-obras/ingenieria" class="white-box">
               <img src="/img/montajes-electromecanicos-600x400.jpg" alt="Ingeniería" title="Ingeniería" class="img-fluid">

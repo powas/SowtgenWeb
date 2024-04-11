@@ -2,6 +2,7 @@
 /*Azul 2*/
 /*Azul 3*/
 /*Gris*/
+/*Gris 2*/
 /*Naranja*/
 /*Aqua*/
 /*Body*/
@@ -120,6 +121,10 @@ li:not(.nav-item) {
   padding-bottom: 6rem !important;
 }
 
+.pt-6 {
+  padding-top: 6rem !important;
+}
+
 .pb-6 {
   padding-bottom: 6rem !important;
 }
@@ -137,6 +142,9 @@ li:not(.nav-item) {
     padding-top: 6rem !important;
     padding-bottom: 6rem !important;
   }
+  .pt-sm-6 {
+    padding-top: 6rem !important;
+  }
   .pb-sm-6 {
     padding-bottom: 6rem !important;
   }
@@ -151,6 +159,9 @@ li:not(.nav-item) {
   .py-md-6 {
     padding-top: 6rem !important;
     padding-bottom: 6rem !important;
+  }
+  .pt-md-6 {
+    padding-top: 6rem !important;
   }
   .pb-md-6 {
     padding-bottom: 6rem !important;
@@ -167,6 +178,9 @@ li:not(.nav-item) {
     padding-top: 6rem !important;
     padding-bottom: 6rem !important;
   }
+  .pt-lg-6 {
+    padding-top: 6rem !important;
+  }
   .pb-lg-6 {
     padding-bottom: 6rem !important;
   }
@@ -182,6 +196,9 @@ li:not(.nav-item) {
     padding-top: 6rem !important;
     padding-bottom: 6rem !important;
   }
+  .pt-xl-6 {
+    padding-top: 6rem !important;
+  }
   .pb-xl-6 {
     padding-bottom: 6rem !important;
   }
@@ -196,6 +213,9 @@ li:not(.nav-item) {
   .py-xxl-6 {
     padding-top: 6rem !important;
     padding-bottom: 6rem !important;
+  }
+  .pt-xxl-6 {
+    padding-top: 6rem !important;
   }
   .pb-xxl-6 {
     padding-bottom: 6rem !important;
@@ -219,7 +239,11 @@ li:not(.nav-item) {
   background-color: #EFF4FF;
 }
 
-.bg-color6 {
+.bg-color5 {
+  background-color: #E9E9E9;
+}
+
+.bg-color7 {
   background-color: #e2f5f4;
 }
 
@@ -227,7 +251,7 @@ section {
   position: relative;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .fullheight {
     height: auto;
     position: absolute;
@@ -239,6 +263,20 @@ section {
   }
   .fullheight .row {
     height: 100%;
+  }
+  .contentheight {
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+  }
+  .two-columns {
+    -moz-column-count: 2;
+         column-count: 2;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
   }
 }
 #breadcrumbs {
@@ -309,6 +347,11 @@ section {
 }
 .white-box:hover {
   color: #4579FF;
+}
+
+.product-box {
+  background-color: white;
+  min-height: 680px;
 }
 
 .circulos {
