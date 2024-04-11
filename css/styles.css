@@ -99,6 +99,16 @@ li:not(.nav-item) {
   border-color: #4579FF;
 }
 
+.dropdown-toggle::after {
+  vertical-align: unset;
+  content: "\f107";
+  font-family: "Line Awesome Free";
+  font-weight: 900;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+}
+
 .bootstrap-select > .dropdown-toggle {
   background-color: white !important;
   border-color: #111E6C !important;

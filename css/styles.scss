@@ -80,6 +80,15 @@ li:not(.nav-item) {
     background-color: white;
     border-color: $color2;
 }
+.dropdown-toggle::after {
+    vertical-align: unset;
+    content: "\f107";
+    font-family: 'Line Awesome Free';
+    font-weight: 900;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+}
 .bootstrap-select>.dropdown-toggle {
     background-color: white !important;
     border-color: $color1 !important;
