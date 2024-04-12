@@ -301,6 +301,14 @@ section {
   color: #4579FF;
 }
 
+@media (min-width: 1200px) {
+  .min-height-600px {
+    min-height: 600px;
+  }
+  .min-height-700px {
+    min-height: 700px;
+  }
+}
 .home-hero-bg {
   position: relative;
 }

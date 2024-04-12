@@ -88,71 +88,70 @@ include($_SERVER["DOCUMENT_ROOT"] . '/header.php');
       <div class="row gy-4">
         <div class="col-12 col-lg-6 col-xxl-3">
             <a href="/mercados/bedidas/gaseosas/" class="white-box">
-              <img src="/img/icono-gaseosas.svg" alt="Gaseosas" title="Gaseosas" class="m-3">
-              <h6 class="d-inline-block my-3">Gaseosas</h6>
+              <img src="/img/icono-gaseosas.svg" alt="Gaseosas" title="Gaseosas" class="ms-3 my-3">
+              <h6 class="d-inline-block m-3">Gaseosas</h6>
             </a>
         </div>
         <div class="col-12 col-lg-6 col-xxl-3">
             <a href="/mercados/bedidas/jugos-y-aguas-saborizadas/" class="white-box">
-              <img src="/img/icono-jugos-y-aguas-saborizadas.svg" alt="Jugos y aguas saborizadas" title="Jugos y aguas saborizadas" class="m-3">
-              <h6 class="d-inline-block my-3">Jugos y aguas saborizadas</h6>
+              <img src="/img/icono-jugos-y-aguas-saborizadas.svg" alt="Jugos y aguas saborizadas" title="Jugos y aguas saborizadas" class="ms-3 my-3">
+              <h6 class="d-inline-block m-3">Jugos y aguas saborizadas</h6>
             </a>
         </div>
         <div class="col-12 col-lg-6 col-xxl-3">
             <a href="/mercados/bedidas/cervezas/" class="white-box">
-              <img src="/img/icono-cervezas.svg" alt="Cervezas" title="Cervezas" class="m-3">
-              <h6 class="d-inline-block my-3">Cervezas</h6>
+              <img src="/img/icono-cervezas.svg" alt="Cervezas" title="Cervezas" class="ms-3 my-3">
+              <h6 class="d-inline-block m-3">Cervezas</h6>
             </a>
         </div>
         <div class="col-12 col-lg-6 col-xxl-3">
             <a href="/mercados/bedidas/bebidas-espirituosas/" class="white-box">
-              <img src="/img/icono-bebidas-espirituosas.svg" alt="Bebidas espirituosas" title="Bebidas espirituosas" class="m-3">
-              <h6 class="d-inline-block my-3">Bebidas espirituosas</h6>
+              <img src="/img/icono-bebidas-espirituosas.svg" alt="Bebidas espirituosas" title="Bebidas espirituosas" class="ms-3 my-3">
+              <h6 class="d-inline-block m-3">Bebidas espirituosas</h6>
             </a>
         </div>
         <div class="col-12 col-lg-6 col-xxl-3">
             <a href="/mercados/salsas-y-dulces/aderezos/" class="white-box">
-              <img src="/img/icono-aderezos.svg" alt="Aderezos" title="Aderezos" class="m-3">
-              <h6 class="d-inline-block my-3">Aderezos</h6>
+              <img src="/img/icono-aderezos.svg" alt="Aderezos" title="Aderezos" class="ms-3 my-3">
+              <h6 class="d-inline-block m-3">Aderezos</h6>
             </a>
         </div>
         <div class="col-12 col-lg-6 col-xxl-3">
             <a href="/mercados/salsas-y-dulces/salsas/" class="white-box">
-              <img src="/img/icono-salsas.svg" alt="Salsas" title="Salsas" class="m-3">
-              <h6 class="d-inline-block my-3">Salsas</h6>
+              <img src="/img/icono-salsas.svg" alt="Salsas" title="Salsas" class="ms-3 my-3">
+              <h6 class="d-inline-block m-3">Salsas</h6>
             </a>
         </div>
         <div class="col-12 col-lg-6 col-xxl-3">
             <a href="/mercados/salsas-y-dulces/dulces/" class="white-box">
-              <img src="/img/icono-dulces.svg" alt="Dulces" title="Dulces" class="m-3">
-              <h6 class="d-inline-block my-3">Dulces</h6>
+              <img src="/img/icono-dulces.svg" alt="Dulces" title="Dulces" class="ms-3 my-3">
+              <h6 class="d-inline-block m-3">Dulces</h6>
             </a>
         </div>
         <div class="col-12 col-lg-6 col-xxl-3">
             <a href="/mercados/lacteos/leche/" class="white-box">
-              <img src="/img/icono-leche.svg" alt="Leche" title="Leche" class="m-3">
-              <h6 class="d-inline-block my-3">Leche</h6>
+              <img src="/img/icono-leche.svg" alt="Leche" title="Leche" class="ms-3 my-3">
+              <h6 class="d-inline-block m-3">Leche</h6>
             </a>
         </div>
         <div class="col-12 col-lg-6 col-xxl-3">
             <a href="/mercados/lacteos/yogurt/" class="white-box">
-              <img src="/img/icono-yogurt.svg" alt="Yogurt" title="Yogurt" class="m-3">
-              <h6 class="d-inline-block my-3">Yogurt</h6>
+              <img src="/img/icono-yogurt.svg" alt="Yogurt" title="Yogurt" class="ms-3 my-3">
+              <h6 class="d-inline-block m-3">Yogurt</h6>
             </a>
         </div>
         <div class="col-12 col-lg-6 col-xxl-3">
             <a href="/mercados/lacteos/crema/" class="white-box">
-              <img src="/img/icono-crema.svg" alt="Crema" title="Crema" class="m-3">
-              <h6 class="d-inline-block my-3">Crema</h6>
+              <img src="/img/icono-crema.svg" alt="Crema" title="Crema" class="ms-3 my-3">
+              <h6 class="d-inline-block m-3">Crema</h6>
             </a>
         </div>
         <div class="col-12 col-lg-6 col-xxl-3">
             <a href="/mercados/lacteos/postres/" class="white-box">
-              <img src="/img/icono-postres.svg" alt="Postres" title="Postres" class="m-3">
-              <h6 class="d-inline-block my-3">Postres</h6>
+              <img src="/img/icono-postres.svg" alt="Postres" title="Postres" class="ms-3 my-3">
+              <h6 class="d-inline-block m-3">Postres</h6>
             </a>
         </div>
-        
       </div>
     </div>
   </section>
