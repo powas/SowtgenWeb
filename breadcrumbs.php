@@ -13,8 +13,11 @@
     elseif ($currentDirectory == "mercados") {
         echo ' <i class="las la-angle-right mx-2"></i> <a href="/mercados">Mercados</a>';
     }
+    elseif ($currentDirectory == "bebidas") {
+        echo ' <i class="las la-angle-right mx-2"></i> <a href="/mercados">Mercados</a> <i class="las la-angle-right mx-2"></i> <a href="/bebidas">Bebidas</a>';
+    }
     elseif ($currentDirectory == "productos") {
         echo ' <i class="las la-angle-right mx-2"></i> <a href="/productos">Productos</a>';
     }
-    echo ' <i class="las la-angle-right"></i> <strong>' . $title . '</strong>';
+    echo ' <i class="las la-angle-right mx-2"></i> <strong>' . $title . '</strong>';
 ?>

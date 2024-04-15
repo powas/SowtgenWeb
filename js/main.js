@@ -28,3 +28,14 @@ $('.owl-brands').owlCarousel({
     },
     }
 });
+
+$(function () {
+	$(".btn-mobile-filters").click(function(event){
+	    $("#filters-wrapper").addClass("show");
+
+	});
+
+	$(".close").click(function(event){
+		$("#filters-wrapper").removeClass("show");
+	});
+});

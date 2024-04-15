@@ -57,7 +57,7 @@ li:not(.nav-item) {
 *::placeholder {
     color: $color1 !important;
 }
-.btn {
+button.btn, a.btn {
     padding: 10px 24px;
     transition: all .3s ease;
     &:hover {
@@ -66,19 +66,24 @@ li:not(.nav-item) {
     }
 }
 .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
-    background-color: $color2;
-    border-color: $color2;
+    background-color: $color2 !important;
+    border-color: $color2 !important;
 }
 .btn-light, .btn-light:hover, .btn-light:active, .btn-light:focus {
-    color: $color2;
-    background-color: $color3;
-    border-color: $color3;
+    color: $color2 !important;
+    background-color: $color3 !important;
+    border-color: $color3 !important;
 }
 
 .btn-outline-primary, .btn-outline-primary:hover, .btn-outline-primary:active, .btn-outline-primary:focus {
-    color: $color2;
-    background-color: white;
-    border-color: $color2;
+    color: $color2 !important;
+    background-color: white !important;
+    border-color: $color2 !important;
+}
+.btn-outline-secondary, .btn-outline-secondary:hover, .btn-outline-secondary:active, .btn-outline-secondary:focus {
+    color: $color2 !important;
+    background-color: $color3 !important;
+    border-color: $color2 !important;
 }
 .dropdown-toggle::after {
     vertical-align: unset;
@@ -88,6 +93,40 @@ li:not(.nav-item) {
     border-top: 0;
     border-right: 0;
     border-left: 0;
+}
+.accordion-item {
+    color: $color1;
+    background-color: transparent;
+    border: none;
+}
+.accordion-button {
+    padding: 15px 0;
+    background-color: transparent;
+}
+.accordion-button:focus {
+    box-shadow: none;
+}
+.accordion-button:not(.collapsed) {
+    color: $color1;
+    background-color: transparent;
+    box-shadow: none;
+}
+.accordion-body {
+    padding: 0px 0px 25px;
+    .custom-checkbox {
+        margin-bottom: 10px;
+    }
+}
+.form-check-input {
+    border-color: $color1;
+    &:checked {
+        background-color: $color1;
+        border-color: $color1;
+    }
+    &:focus {
+        border-color: $color1;
+        box-shadow: none !important;
+    }
 }
 .bootstrap-select>.dropdown-toggle {
     background-color: white !important;
@@ -265,6 +304,9 @@ section {
     }
 }
 @media (min-width: 1200px) {
+    .min-height-450px {
+        min-height: 450px;
+    }
     .min-height-600px {
         min-height: 600px;
     }
@@ -326,10 +368,6 @@ section {
     &:hover {
         color: $color2;
     }
-}
-.product-box {
-    background-color: white;
-    min-height: 680px;
 }
 .circulos {
     position: relative;
@@ -422,6 +460,43 @@ header {
 .nav-link:focus, .nav-link:hover {
     color: $color2;
 }
+.filter-btn {
+    padding: .35rem .5rem .35rem .75rem !important;
+    font-size: .75rem;
+    &:after {
+        content: " \f00d";
+        font-family: 'Line Awesome Free';
+        font-weight: 900;
+    }
+}
+@media (max-width: 1199.98px) {
+    #filters-wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 0;
+        z-index: 99999;
+        height: 100%;
+        overflow-y: auto;
+        transition: all .8s ease;
+        margin-top: 2000px;
+        background-color: #fff;
+    }
+    #filters-wrapper.show {
+        display: block !important;
+        margin-top: 0 !important;
+        transition: all .8s ease;
+    }
+}
+.btn-mobile-filters {
+    position: fixed;
+    z-index: 9999;
+    right: 0;
+    bottom: 0;
+}
+
+
 /*Footer*/
 footer {
     font-size: 14px;

@@ -15,7 +15,7 @@ include($_SERVER["DOCUMENT_ROOT"] . '/header.php');
   </section>
   <section class="py-5 py-lg-6">
     <div class="container">
-    <div class="row">
+      <div class="row">
         <div class="col">
           <h1><?php echo $title; ?></h1>
         </div>

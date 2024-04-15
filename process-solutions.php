@@ -17,7 +17,9 @@ include($_SERVER["DOCUMENT_ROOT"] . '/header.php');
     <div class="container position-relative z-1 min-height-700px d-flex align-items-center">
       <div class="row align-items-center">
         <div class="col-xl-6 py-5 text-white">
-          <img src="/img/sowtgen-process-solutions-logo-blanco.svg" alt="SOWTGEN Ingenieria y Obras" title="SOWTGEN Ingenieria y Obras Logo" class="mb-4">
+          <h1>
+            <img src="/img/sowtgen-process-solutions-logo-blanco.svg" alt="SOWTGEN Process Solutions" title="SOWTGEN Process Solutions Logo">
+          </h1>
           <p class="lead">Ésta es la unidad dedicada a brindar soluciones para el desarrollo de procesos y fabricación de equipos tecnológicos que intervienen en los procesos industriales.</p>
           <p>Sus profesionales se especializan en el desarrollo integral de sistemas de procesamiento para la producción de alimentos, bebidas y productos de home & personal care.</p>
           <p>La unidad, interviene en proyectos desde el diseño, la construcción e implementación de procesos y tecnologías desarrolladas brindado soluciones de última generación.</p>

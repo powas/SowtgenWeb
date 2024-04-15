@@ -17,7 +17,9 @@ include($_SERVER["DOCUMENT_ROOT"] . '/header.php');
     <div class="container position-relative z-1 min-height-700px d-flex align-items-center">
       <div class="row">
         <div class="col-xl-6 py-5 text-white">
-          <img src="/img/sowtgen-ingenieria-y-obras-logo-blanco.svg" alt="SOWTGEN Ingeniería y Obras" title="SOWTGEN Ingeniería y Obras Logo" class="mb-4">
+          <h1>
+            <img src="/img/sowtgen-ingenieria-y-obras-logo-blanco.svg" alt="SOWTGEN Ingeniería y Obras" title="SOWTGEN Ingeniería y Obras Logo">
+          </h1>
           <p class="lead">Nos especializamos en brindar soluciones integrales para el desarrollo sostenible de los sectores de la industria, infraestructura, agua y medioambiente, energía, oil & gas y servicios.</p>
           <p>Intervenimos en los proyectos desde el diseño, ingeniería, fabricación, construcción y montaje hasta su puesta en marcha, poniendo en práctica los más altos estándares de seguridad, calidad y medioambiente garantizando el control de los costos y la supervisión en la mano de obra.</p>
           <p>Nuestro equipo de profesionales está altamente calificado y cuenta con más de 25 años de experiencia para abordar proyectos en cualquiera de sus etapas.</p>
