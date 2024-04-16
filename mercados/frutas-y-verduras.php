@@ -17,7 +17,7 @@ include($_SERVER["DOCUMENT_ROOT"] . '/header.php');
     <div class="container">
       <div class="row">
         <div class="col">
-          <h1>Frutas y verduras</h1>
+          <h1><?php echo $title; ?></h1>
         </div>
       </div>
       <div class="row gy-4">

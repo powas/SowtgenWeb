@@ -58,7 +58,7 @@ include($_SERVER["DOCUMENT_ROOT"] . '/header.php');
               <img src="/img/sowtgen-elements-logo.svg" alt="SOWTGEN Elements" title="SOWTGEN Elements Logo" class="img-fluid">
             </div>
             <p>Breve texto describiendo las soluciones que se le dan a los diferentes mercados en los que opera Sowtgen.</p>
-            <a href="/elements" type="button" class="btn btn-primary">Conocer más</a>
+            <a href="/productos" type="button" class="btn btn-primary">Conocer más</a>
           </div>
         </div>
       </div>

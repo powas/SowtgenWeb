@@ -27,7 +27,7 @@ include($_SERVER["DOCUMENT_ROOT"] . '/header.php');
       <div class="row">
         <div class="col-xl-6 py-xl-5 mt-n5 mt-xl-0">
             <div class="bg-white min-height-450px d-flex flex-column p-5">
-                <h1>Gaseosas</h1>
+                <h1><?php echo $title; ?></h1>
                 <p>En SOWTGEN contamos con la experiencia para el desarrollo de equipos y líneas para acondicionamiento de frutas y verduras. Diseñamos y fabricamos líneas de transportes, silos de almacenamiento, transportes hidráulicos, separadores de piedras, lavadoras.</p>
                 <p>Implementamos líneas completas automatizadas mediante control por Scada.</p>
                 <p>Contamos con equipos sedimentadores de barros automatizados para la optimización de las plantas de efluentes.</p>
@@ -38,6 +38,11 @@ include($_SERVER["DOCUMENT_ROOT"] . '/header.php');
   </section>
   <section class="py-5 py-lg-6">
     <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2>Equipos</h2>
+        </div>
+      </div>
       <div class="row gy-4">
         <div class="col-12 col-lg-6 col-xxl-3">
             <a href="#" class="white-box">
@@ -79,8 +84,6 @@ include($_SERVER["DOCUMENT_ROOT"] . '/header.php');
               <h6 class="d-inline-block m-3">Process automations</h6>
             </a>
         </div>
-        
-        
       </div>
     </div>
   </section>

@@ -26,14 +26,14 @@ include($_SERVER["DOCUMENT_ROOT"] . '/header.php');
     <div class="container position-relative">
       <div class="row">
         <div class="col-xl-6 pt-xl-5 mt-n5 mt-xl-0">
-            <div class="bg-white min-height-700px d-flex flex-column p-5">
-                <h1>Pasteurizadores</h1>
+            <div class="bg-white rounded-1 min-height-700px d-flex flex-column p-5">
+                <h1><?php echo $title; ?></h1>
                 <p>Los equipos pasteurizadores <strong>KommtPaster™</strong> están diseñados para aplicaciones que requieran una gran producción con un bajo costo inicial y operativo.</p>
                 <p>Poseen elementos con las más altas tecnologías que les permiten combinar diseño y fabricación controlada que garantice un producto que cumpla con los requerimientos asépticos.</p>
                 <p>Los años de experiencia en el diseño y fabricación de pasteurizadores, han perfeccionado su técnica logrando <strong>reducir al máximo las pérdidas de producto</strong>, otorgándole al cliente una notable reducción de sus costos operativos. SOWTGEN cuenta con módulos de aplicación simple controlados bajo el sistema denominado <strong>KommtSup™</strong> el cual tiene la capacidad de integrarse a los sistemas de control de planta.</p>
                 <p>También, está diseñado para trabajar con todas las variables de proceso estándares y las solicitadas por cada aplicación particular y cuenta con un registro de históricos para lograr trazabilidad.</p>
                 <div class="mt-auto">
-                  <a href="#" type="button" class="btn btn-primary mt-3 me-5">Descargar brochure</a><a href="#" type="button" class="btn btn-outline-primary mt-3">Descargar brochure</a>
+                  <a href="#" type="button" class="btn btn-primary mt-3 me-5">Descargar brochure <i class="las la-download"></i></a><a href="#" type="button" class="btn btn-outline-primary mt-3">Descargar brochure</a>
                 </div>
             </div>
         </div>
