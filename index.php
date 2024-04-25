@@ -23,10 +23,10 @@ require_once 'controlador/controlador-paginas.php';
 require_once 'controlador/controlador-ingenieria-y-obras.php';
 
 // Comprobar si la ruta es simple y está definida, y dirigir la solicitud al controlador correspondiente
-if (array_key_exists($url, $routes)) {
+if (array_key_exists($url, $routes)){
   include_once $routes[$url];
 } 
-else {
+else{
   $flagCoincidencia = false;
   // Comprobar si la ruta es compleja y esta definida, y dirigir la solicitud a la plantilla correspondiente
   foreach($routes as $key => $value)

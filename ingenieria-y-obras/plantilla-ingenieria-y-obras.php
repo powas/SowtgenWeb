@@ -1,5 +1,8 @@
 <?php
+//REVISAR PARA QUE NO ESTE HARDCODEADO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+$pagina = cargarPagina('ingenieria-y-obras');
 $ingenieria = cargarIngenieria($param);
+$ingenierias = cargarIngenierias();
 
 if(empty($ingenieria)){
   // Manejar la ruta no encontrada  
@@ -37,6 +40,7 @@ include_once 'header.php';
       </div>
     </div>
   </section>
+  <?php if(!empty($ingenieria['descripcion_secundaria_ingenieria'])) { ?>
   <section class="py-5 py-lg-6">
     <div class="container">
       <div class="row">
@@ -49,13 +53,14 @@ include_once 'header.php';
       <div class="row align-items-center">
         <div class="col-xl-6">
           <div class="bg-dark text-white p-5">
-            <p>SOWTGEN cuenta con una <strong>amplia experiencia</strong> en la ejecución de montajes en industrias alimenticias, químicas y petroquímicas.</p>
-            <p>La ejecución de cada proyecto es llevada a cabo por un equipo de profesionales formado por un <strong>project manager, su equipo de ingenieros, supervisores y personal de montaje.</strong></p>
+            <?=$ingenieria['descripcion_secundaria_ingenieria']?>
           </div>
         </div>
       </div>
     </div>
   </section>
+  <?php } ?>
+  <?php if(!empty($ingenierias)) { ?>
   <section class="pb-5 pb-lg-6">
     <div class="container">
       <div class="row">
@@ -63,38 +68,23 @@ include_once 'header.php';
           <h2>También podría interesarte</h2>
         </div>
       </div>
-      <div class="row gy-4">
-        <div class="col-6 col-md-4 col-xxl">
-            <a href="<?=BASE_PATH?>/ingenieria-y-obras/ingenieria" class="white-box">
-              <img src="<?=BASE_PATH?>/img/montajes-electromecanicos-600x400.jpg" alt="Ingeniería" title="Ingeniería" class="img-fluid">
-              <h6 class="m-3">Ingeniería</h6>
-            </a>
-        </div>
-        <div class="col-6 col-md-4 col-xxl">
-            <a href="<?=BASE_PATH?>/ingenieria-y-obras/management" class="white-box">
-              <img src="<?=BASE_PATH?>/img/montajes-electromecanicos-600x400.jpg" alt="Management" title="Management" class="img-fluid">
-              <h6 class="m-3">Management</h6>
-            </a>
-        </div>
-        <div class="col-6 col-md-4 col-xxl">
-            <a href="<?=BASE_PATH?>/ingenieria-y-obras/fabricacion" class="white-box">
-              <img src="<?=BASE_PATH?>/img/montajes-electromecanicos-600x400.jpg" alt="Fabricación" title="Fabricación" class="img-fluid">
-              <h6 class="m-3">Fabricación</h6>
-            </a>
-        </div>
-        <div class="col-6 col-md-4 col-xxl">
-            <a href="<?=BASE_PATH?>/ingenieria-y-obras/automatizacion-y-control" class="white-box">
-              <img src="<?=BASE_PATH?>/img/montajes-electromecanicos-600x400.jpg" alt="Automatización y Control" title="Automatización y Control" class="img-fluid">
-              <h6 class="m-3">Automatización y Control</h6>
-            </a>
-        </div>
-        <div class="col-6 col-md-4 col-xxl">
-            <a href="<?=BASE_PATH?>/ingenieria-y-obras/mantenimiento" class="white-box">
-              <img src="<?=BASE_PATH?>/img/montajes-electromecanicos-600x400.jpg" alt="Mantenimiento" title="Mantenimiento" class="img-fluid">
-              <h6 class="m-3">Mantenimiento</h6>
-            </a>
-        </div>
+      <div class="row gy-4">        
+        <?php 
+          if(is_array($ingenierias)){
+            foreach($ingenierias as $auxIngenieria){
+              if($auxIngenieria['id_ingenieria'] !== $ingenieria['id_ingenieria']){
+                echo '  <div class="col-6 col-md-4 col-xxl">
+                          <a href="'.BASE_PATH.'/'.$pagina['slug_pagina'].'/'.$auxIngenieria['slug_ingenieria'].'" class="white-box">
+                            <img src="'.BASE_PATH.'/img/montajes-electromecanicos-600x400.jpg" alt="'.$auxIngenieria['titulo_ingenieria'].'" title="'.$auxIngenieria['titulo_ingenieria'].'" class="img-fluid">
+                            <h6 class="m-3">'.$auxIngenieria['titulo_ingenieria'].'</h6>
+                          </a>
+                      </div>';
+              }
+            }
+          }
+        ?>
       </div>
     </div>
   </section>
+  <?php } ?>
 </main>
