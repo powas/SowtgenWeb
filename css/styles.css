@@ -569,3 +569,6 @@ footer .nav-link i {
   padding: 4px;
   margin-right: 10px;
 }
+footer .developer-page {
+  text-decoration: none;
+}

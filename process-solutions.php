@@ -1,14 +1,13 @@
 <?php
 $title = 'Process Solutions';
 $description = 'Description';
-include($_SERVER["DOCUMENT_ROOT"] . '/header.php');
 ?>
 <main class="flex-shrink-0">
   <section id="breadcrumbs">
     <div class="container">
       <div class="row">
         <div class="col my-2">
-        <?php include($_SERVER["DOCUMENT_ROOT"] . '/breadcrumbs.php');?>
+        <?php include_once 'breadcrumbs.php';?>
         </div>
       </div>
     </div>
@@ -18,20 +17,20 @@ include($_SERVER["DOCUMENT_ROOT"] . '/header.php');
       <div class="row align-items-center">
         <div class="col-xl-6 py-5 text-white">
           <h1>
-            <img src="/img/sowtgen-process-solutions-logo-blanco.svg" alt="SOWTGEN Process Solutions" title="SOWTGEN Process Solutions Logo">
+            <img src="<?=BASE_PATH?>/img/sowtgen-process-solutions-logo-blanco.svg" alt="SOWTGEN Process Solutions" title="SOWTGEN Process Solutions Logo">
           </h1>
           <p class="lead">Ésta es la unidad dedicada a brindar soluciones para el desarrollo de procesos y fabricación de equipos tecnológicos que intervienen en los procesos industriales.</p>
           <p>Sus profesionales se especializan en el desarrollo integral de sistemas de procesamiento para la producción de alimentos, bebidas y productos de home & personal care.</p>
           <p>La unidad, interviene en proyectos desde el diseño, la construcción e implementación de procesos y tecnologías desarrolladas brindado soluciones de última generación.</p>
         </div>
         <div class="col-xl-6 pb-5 pb-xl-0">
-          <img src="/img/process-solutions-hero.png" alt="SOWTGEN" title="SOWTGEN" class="img-fluid">
+          <img src="<?=BASE_PATH?>/img/process-solutions-hero.png" alt="SOWTGEN" title="SOWTGEN" class="img-fluid">
         </div>
       </div>
     </div>
     <div class="container-fluid fullheight g-0">
       <div class="row">
-        <div class="col-xl-5 ms-auto" style="background-image: url(/img/ingenieria-y-obras-1200x800.jpg);background-size:cover;background-position:center;">
+        <div class="col-xl-5 ms-auto" style="background-image: url(<?=BASE_PATH?>/img/ingenieria-y-obras-1200x800.jpg);background-size:cover;background-position:center;">
         </div>
       </div>
     </div>
@@ -47,7 +46,7 @@ include($_SERVER["DOCUMENT_ROOT"] . '/header.php');
     </div>
     <div class="container-fluid fullheight g-0 pe-none">
       <div class="row">
-        <div class="col-xl-5 rounded-end-pill" style="background-image: url(/img/montajes-electromecanicos-1200x800.jpg);background-size:cover;background-position:center;">
+        <div class="col-xl-5 rounded-end-pill" style="background-image: url(<?=BASE_PATH?>/img/montajes-electromecanicos-1200x800.jpg);background-size:cover;background-position:center;">
         </div>
       </div>
     </div>
@@ -55,18 +54,18 @@ include($_SERVER["DOCUMENT_ROOT"] . '/header.php');
   <section class="py-5 py-lg-6">
     <div class="container">
       <div class="row gx-0 gx-lg-4 gy-4">
-      <div class="col-lg grow-box" style="background-image: url(/img/process-solutions-liquidos.jpg)">
-          <a href="/process-solutions/liquidos/">
+      <div class="col-lg grow-box" style="background-image: url(<?=BASE_PATH?>/img/process-solutions-liquidos.jpg)">
+          <a href="<?=BASE_PATH?>/process-solutions/liquidos/">
             <h2>Líquidos</h2>
           </a>
         </div>
-        <div class="col-lg grow-box" style="background-image: url(/img/process-solutions-solidos.jpg)">
-          <a href="/process-solutions/solidos/">
+        <div class="col-lg grow-box" style="background-image: url(<?=BASE_PATH?>/img/process-solutions-solidos.jpg)">
+          <a href="<?=BASE_PATH?>/process-solutions/solidos/">
             <h2>Sólidos</h2>
           </a>
         </div>
-        <div class="col-lg grow-box" style="background-image: url(/img/process-solutions-frutas-y-verduras.jpg)">
-          <a href="/process-solutions/frutas-y-verduras/">
+        <div class="col-lg grow-box" style="background-image: url(<?=BASE_PATH?>/img/process-solutions-frutas-y-verduras.jpg)">
+          <a href="<?=BASE_PATH?>/process-solutions/frutas-y-verduras/">
             <h2>Frutas y verduras</h2>
           </a>
         </div>
@@ -74,4 +73,3 @@ include($_SERVER["DOCUMENT_ROOT"] . '/header.php');
     </div>
   </section>
 </main>
-<?php include($_SERVER["DOCUMENT_ROOT"] . '/footer.php'); ?>

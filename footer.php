@@ -2,7 +2,7 @@
         <div class="container">
             <div class="row my-4">
                 <div class="col-xxl-3">
-                    <img src="/img/sowtgen-logo-blanco.svg" alt="SOWTGEN" title="SOWTGEN Logo" class="max-width-100per mb-4">
+                    <img src="<?=BASE_PATH?>/img/sowtgen-logo-blanco.svg" alt="SOWTGEN" title="SOWTGEN Logo" class="max-width-100per mb-4">
                 </div>
                 <div class="col-xxl-9">
                     <div class="row">
@@ -81,7 +81,7 @@
                 </div>
             </div>
             <div class="row mb-3">
-                <div class="col text-center"><small>© 2023 Copyright Sowtgen - Todos los derechos reservados. Realizado por Think B</small></div>
+                <div class="col text-center"><small>© <?php echo date("Y"); ?> Copyright Sowtgen - Todos los derechos reservados. Realizado por <strong><a class="developer-page" href="https://estudiothinkb.com/">Think B</a></strong></small></div>
             </div>
         </div>
     </footer>
@@ -90,6 +90,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta3/dist/js/bootstrap-select.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="/js/main.js"></script>
+    <script src="<?=BASE_PATH?>/js/main.js"></script>
 </body>
 </html>

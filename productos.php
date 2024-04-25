@@ -1,14 +1,13 @@
 <?php
 $title = 'Productos';
 $description = 'Description';
-include($_SERVER["DOCUMENT_ROOT"] . '/header.php');
 ?>
 <main class="flex-shrink-0">
   <section id="breadcrumbs">
     <div class="container">
       <div class="row">
         <div class="col my-2">
-        <?php include($_SERVER["DOCUMENT_ROOT"] . '/breadcrumbs.php');?>
+        <?php include_once 'breadcrumbs.php';?>
         </div>
       </div>
     </div>
@@ -226,4 +225,3 @@ include($_SERVER["DOCUMENT_ROOT"] . '/header.php');
 
   </section>
 </main>
-<?php include($_SERVER["DOCUMENT_ROOT"] . '/footer.php'); ?>
