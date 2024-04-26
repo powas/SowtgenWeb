@@ -41,7 +41,7 @@ include_once 'header.php';
     </div>
   </section>
   <?php if(!empty($ingenieria['descripcion_secundaria_ingenieria'])) { ?>
-  <section class="py-5 py-lg-6">
+  <section class="pt-5 pt-lg-6">
     <div class="container">
       <div class="row">
         <div class="col-12 col-xl-11 ms-auto">
@@ -61,7 +61,7 @@ include_once 'header.php';
   </section>
   <?php } ?>
   <?php if(!empty($ingenierias)) { ?>
-  <section class="pb-5 pb-lg-6">
+  <section class="py-5 py-lg-6">
     <div class="container">
       <div class="row">
         <div class="col">
