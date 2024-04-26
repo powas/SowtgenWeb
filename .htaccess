@@ -2,6 +2,7 @@ RewriteEngine On
 
 # Excluir archivos y directorios reales
 RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
 
 # Dirigir todas las solicitudes a index.php
-RewriteRule ^(.*)/?$ index.php?url=$1 [L]
+RewriteRule ^(.*)$ index.php?url=$1 [L,QSA]

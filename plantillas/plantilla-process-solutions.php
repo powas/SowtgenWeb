@@ -1,14 +1,25 @@
 <?php
-$title = 'Líquidos';
-$description = 'Description';
-include($_SERVER["DOCUMENT_ROOT"] . '/header.php');
+//REVISAR PARA QUE NO ESTE HARDCODEADO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+$pagina = cargarPagina('process-solutions');
+$processSolution = cargarProcessSolution($param);
+$processSolutions = cargarProcessSolutions();
+
+if(empty($processSolution)){
+  // Manejar la ruta no encontrada  
+  header('Location: error');
+}
+
+$title = $processSolution['titulo_process_solution'];
+$description = $processSolution['descripcion_corta_process_solution'];
+
+include_once 'header.php';
 ?>
 <main class="flex-shrink-0">
   <section id="breadcrumbs">
     <div class="container">
       <div class="row">
         <div class="col my-2">
-        <?php include($_SERVER["DOCUMENT_ROOT"] . '/breadcrumbs.php');?>
+        <?php include_once 'breadcrumbs.php';?>
         </div>
       </div>
     </div>
@@ -156,4 +167,3 @@ include($_SERVER["DOCUMENT_ROOT"] . '/header.php');
     </div>
   </section>
 </main>
-<?php include($_SERVER["DOCUMENT_ROOT"] . '/footer.php'); ?>

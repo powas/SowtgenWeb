@@ -1,6 +1,17 @@
 <?php
-$title = 'Process Solutions';
-$description = 'Description';
+//REVISAR PARA QUE NO ESTE HARDCODEADO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+$pagina = cargarPagina('process-solutions');
+$process_solutions = cargarProcessSolutions();
+
+if(empty($process_solutions)){
+  // Manejar la ruta no encontrada  
+  header('Location: error');
+}
+
+$title = $pagina['titulo_pagina'];
+$description = $pagina['descripcion_pagina'];
+
+include_once 'header.php';
 ?>
 <main class="flex-shrink-0">
   <section id="breadcrumbs">
@@ -54,21 +65,19 @@ $description = 'Description';
   <section class="py-5 py-lg-6">
     <div class="container">
       <div class="row gx-0 gx-lg-4 gy-4">
-      <div class="col-lg grow-box" style="background-image: url(<?=BASE_PATH?>/img/process-solutions-liquidos.jpg)">
-          <a href="<?=BASE_PATH?>/process-solutions/liquidos/">
-            <h2>Líquidos</h2>
-          </a>
-        </div>
-        <div class="col-lg grow-box" style="background-image: url(<?=BASE_PATH?>/img/process-solutions-solidos.jpg)">
-          <a href="<?=BASE_PATH?>/process-solutions/solidos/">
-            <h2>Sólidos</h2>
-          </a>
-        </div>
-        <div class="col-lg grow-box" style="background-image: url(<?=BASE_PATH?>/img/process-solutions-frutas-y-verduras.jpg)">
-          <a href="<?=BASE_PATH?>/process-solutions/frutas-y-verduras/">
-            <h2>Frutas y verduras</h2>
-          </a>
-        </div>
+        <?php 
+          if(!empty($process_solutions)){
+            if(is_array($process_solutions)){
+              foreach($process_solutions as $process_solution){
+                echo '  <div class="col-lg grow-box" style="background-image: url('.BASE_PATH.'/img/'.$process_solution['foto_process_solution'].')">
+                          <a href="'.BASE_PATH.'/'.$pagina['slug_pagina'].'/'.$process_solution['slug_process_solution'].'">
+                            <h2>'.$process_solution['titulo_process_solution'].'</h2>
+                          </a>
+                        </div>';
+              }
+            }
+          }
+        ?>
       </div>
     </div>
   </section>

@@ -15,12 +15,14 @@ $routes = array(
   'process-solutions' => 'process-solutions.php',
   'mercados' => 'mercados.php',
   'productos' => 'productos.php',
-  'ingenieria-y-obras/' => 'ingenieria-y-obras/plantilla-ingenieria-y-obras.php',
+  'ingenieria-y-obras/' => 'plantillas/plantilla-ingenieria-y-obras.php',
+  'process-solutions/' => 'plantillas/plantilla-process-solutions.php',
 );
 
 require_once 'config/configuracion.php';
 require_once 'controlador/controlador-paginas.php';
 require_once 'controlador/controlador-ingenieria-y-obras.php';
+require_once 'controlador/controlador-process-solutions.php';
 
 // Comprobar si la ruta es simple y está definida, y dirigir la solicitud al controlador correspondiente
 if (array_key_exists($url, $routes)){
