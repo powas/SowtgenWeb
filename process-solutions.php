@@ -64,17 +64,20 @@ include_once 'header.php';
   </section>
   <section class="py-5 py-lg-6">
     <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2>Soluciones para</h2>
+        </div>
+      </div>
       <div class="row gx-0 gx-lg-4 gy-4">
-        <?php 
-          if(!empty($process_solutions)){
-            if(is_array($process_solutions)){
-              foreach($process_solutions as $process_solution){
-                echo '  <div class="col-lg grow-box" style="background-image: url('.BASE_PATH.'/img/'.$process_solution['foto_process_solution'].')">
-                          <a href="'.BASE_PATH.'/'.$pagina['slug_pagina'].'/'.$process_solution['slug_process_solution'].'">
-                            <h2>'.$process_solution['titulo_process_solution'].'</h2>
-                          </a>
-                        </div>';
-              }
+        <?php           
+          if(is_array($process_solutions)){
+            foreach($process_solutions as $process_solution){
+              echo '  <div class="col-lg grow-box" style="background-image: url('.BASE_PATH.'/img/'.$pagina['slug_pagina'].'/'.$process_solution['foto_process_solution'].')">
+                        <a href="'.BASE_PATH.'/'.$pagina['slug_pagina'].'/'.$process_solution['slug_process_solution'].'">
+                          <h2>'.$process_solution['titulo_process_solution'].'</h2>
+                        </a>
+                      </div>';
             }
           }
         ?>

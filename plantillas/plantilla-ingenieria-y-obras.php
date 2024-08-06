@@ -35,7 +35,7 @@ include_once 'header.php';
     </div>
     <div class="container-fluid fullheight g-0 pe-none">
       <div class="row">
-        <div class="col-xl-5 ms-auto rounded-start-pill" style="background-image: url(<?=BASE_PATH?>/img/montajes-electromecanicos-1200x800.jpg);background-size:cover;background-position:center;">
+        <div class="col-xl-5 ms-auto rounded-start-pill" style="background-image: url(<?=BASE_PATH?>/img/<?=$pagina['slug_pagina'].'/'.$ingenieria['slug_ingenieria'].'/'.$ingenieria['foto_principal_grande_ingenieria']?>);background-size:cover;background-position:center;">
         </div>
       </div>
     </div>
@@ -45,7 +45,7 @@ include_once 'header.php';
     <div class="container">
       <div class="row">
         <div class="col-12 col-xl-11 ms-auto">
-          <img src="<?=BASE_PATH?>/img/montajes-electromecanicos-amplia-experiencia.jpg" alt="Amplia Experiencia" title="Amplia Experiencias" class="img-fluid">
+          <img src="<?=BASE_PATH?>/img/<?=$pagina['slug_pagina'].'/'.$ingenieria['slug_ingenieria'].'/'.$ingenieria['foto_secundaria_ingenieria']?>" alt="Amplia Experiencia" title="Amplia Experiencias" class="img-fluid">
         </div>
       </div>
     </div>
@@ -71,12 +71,12 @@ include_once 'header.php';
       <div class="row gy-4">        
         <?php 
           if(is_array($ingenierias)){
-            foreach($ingenierias as $auxIngenieria){
-              if($auxIngenieria['id_ingenieria'] !== $ingenieria['id_ingenieria']){
+            foreach($ingenierias as $aux_ingenieria){
+              if($aux_ingenieria['id_ingenieria'] !== $ingenieria['id_ingenieria']){
                 echo '  <div class="col-6 col-md-4 col-xxl">
-                          <a href="'.BASE_PATH.'/'.$pagina['slug_pagina'].'/'.$auxIngenieria['slug_ingenieria'].'" class="white-box">
-                            <img src="'.BASE_PATH.'/img/montajes-electromecanicos-600x400.jpg" alt="'.$auxIngenieria['titulo_ingenieria'].'" title="'.$auxIngenieria['titulo_ingenieria'].'" class="img-fluid">
-                            <h6 class="m-3">'.$auxIngenieria['titulo_ingenieria'].'</h6>
+                          <a href="'.BASE_PATH.'/'.$pagina['slug_pagina'].'/'.$aux_ingenieria['slug_ingenieria'].'" class="white-box">
+                            <img src="'.BASE_PATH.'/img/'.$pagina['slug_pagina'].'/'.$aux_ingenieria['slug_ingenieria'].'/'.$aux_ingenieria['foto_principal_intereses_ingenieria'].'" alt="'.$aux_ingenieria['titulo_ingenieria'].'" title="'.$aux_ingenieria['titulo_ingenieria'].'" class="img-fluid">
+                            <h6 class="m-3">'.$aux_ingenieria['titulo_ingenieria'].'</h6>
                           </a>
                       </div>';
               }

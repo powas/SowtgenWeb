@@ -1,6 +1,18 @@
 <?php
-$title = 'Mercados';
-$description = 'Description';
+//REVISAR PARA QUE NO ESTE HARDCODEADO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+$pagina = cargarPagina('mercados');
+
+$mercados = cargarMercados();
+
+if(empty($mercados)){
+  // Manejar la ruta no encontrada  
+  header('Location: error');
+}
+
+$title = $pagina['titulo_pagina'];
+$description = $pagina['descripcion_pagina'];
+
+include_once 'header.php';
 ?>
 <main class="flex-shrink-0">
   <section id="breadcrumbs">
@@ -27,75 +39,49 @@ $description = 'Description';
         </div>
       </div>
     </div>
-  </section>
-  <section class="py-5 py-lg-6">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <h2>Alimentos y bebidas</h2>
-        </div>
-      </div>
-      <div class="row gy-4">
-        <div class="col-12 col-lg-6">
-            <a href="<?=BASE_PATH?>/mercados/frutas-y-verduras" class="white-box">
-              <img src="<?=BASE_PATH?>/img/frutas-y-verduras-1200x400.jpg" alt="Frutas y verduras" title="Frutas y verduras" class="img-fluid">
-              <h6 class="m-3">Frutas y verduras</h6>
-            </a>
-        </div>
-        <div class="col-12 col-lg-6">
-            <a href="<?=BASE_PATH?>/mercados/bebidas" class="white-box">
-              <img src="<?=BASE_PATH?>/img/frutas-y-verduras-1200x400.jpg" alt="Bebidas" title="Bebidas" class="img-fluid">
-              <h6 class="m-3">Bebidas</h6>
-            </a>
-        </div>
-        <div class="col-12 col-lg-6">
-            <a href="<?=BASE_PATH?>/mercados/salsas-y-dulces" class="white-box">
-              <img src="<?=BASE_PATH?>/img/frutas-y-verduras-1200x400.jpg" alt="Salsas y dulces" title="Salsas y dulces" class="img-fluid">
-              <h6 class="m-3">Salsas y dulces</h6>
-            </a>
-        </div>
-        <div class="col-12 col-lg-6">
-            <a href="<?=BASE_PATH?>/mercados/alimentos-solidos-y-polvos" class="white-box">
-              <img src="<?=BASE_PATH?>/img/frutas-y-verduras-1200x400.jpg" alt="Alimentos sólidos y polvos" title="Alimentos sólidos y polvos" class="img-fluid">
-              <h6 class="m-3">Alimentos sólidos y polvos</h6>
-            </a>
-        </div>
-        <div class="col-12 col-lg-6">
-            <a href="<?=BASE_PATH?>/mercados/ingredientes" class="white-box">
-              <img src="<?=BASE_PATH?>/img/frutas-y-verduras-1200x400.jpg" alt="Ingredientes" title="Ingredientes" class="img-fluid">
-              <h6 class="m-3">Ingredientes</h6>
-            </a>
-        </div>
-        <div class="col-12 col-lg-6">
-            <a href="<?=BASE_PATH?>/mercados/lacteos" class="white-box">
-              <img src="<?=BASE_PATH?>/img/frutas-y-verduras-1200x400.jpg" alt="Lácteos" title="Lácteos" class="img-fluid">
-              <h6 class="m-3">Lácteos</h6>
-            </a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="pb-5 pb-lg-6">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <h2>Personal & Home care</h2>
-        </div>
-      </div>
-      <div class="row gy-4">
-        <div class="col-12 col-lg-6">
-            <a href="<?=BASE_PATH?>/mercados/personal-care" class="white-box">
-              <img src="<?=BASE_PATH?>/img/frutas-y-verduras-1200x400.jpg" alt="Personal Care" title="Personal Care" class="img-fluid">
-              <h6 class="m-3">Personal Care</h6>
-            </a>
-        </div>
-        <div class="col-12 col-lg-6">
-            <a href="<?=BASE_PATH?>/mercados/home-care" class="white-box">
-              <img src="<?=BASE_PATH?>/img/frutas-y-verduras-1200x400.jpg" alt="Home Care" title="Home Care" class="img-fluid">
-              <h6 class="m-3">Home Care</h6>
-            </a>
-        </div>
-      </div>
-    </div>
-  </section>
+  </section> 
+  <?php 
+    $auxCategoriaMercado = 0;
+    if(is_array($mercados)){
+      foreach($mercados as $mercado){
+        if($auxCategoriaMercado != $mercado['id_categoria_mercado']){
+
+          if($auxCategoriaMercado > 0){
+            echo '      </div>
+                      </div>
+                    </section>
+                    <section class="pb-5 pb-lg-6">
+                      <div class="container">';
+          }
+          else {
+            echo '  <section class="py-5 py-lg-6">
+                      <div class="container">';
+          }
+
+          echo '  <div class="row">
+                    <div class="col">
+                      <h2>'.$mercado['titulo_categoria_mercado'].'</h2>
+                    </div>
+                  </div>';
+
+          echo '      <div class="row gy-4">';
+          
+          $auxCategoriaMercado = $mercado['id_categoria_mercado'];
+        }
+
+        echo '  <div class="col-12 col-lg-6">
+                    <a href="'.BASE_PATH.'/'.$pagina['slug_pagina'].'/'.$mercado['slug_mercado'].'" class="white-box">
+                      <img src="'.BASE_PATH.'/img/'.$pagina['slug_pagina'].'/'.$mercado['slug_mercado'].'/'.$mercado['foto_mercado'].'" alt="'.$mercado['titulo_mercado'].'" title="'.$mercado['titulo_mercado'].'" class="img-fluid">
+                      <h6 class="m-3">'.$mercado['titulo_mercado'].'</h6>
+                    </a>
+                </div>';
+      }
+
+      if($auxCategoriaMercado > 0){
+        echo '      </div>
+                  </div>
+                </section>';
+      }
+    }
+  ?>
 </main>

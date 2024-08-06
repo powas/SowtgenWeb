@@ -30,18 +30,31 @@
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="<?=BASE_PATH?>/ingenieria-y-obras" data-bs-toggle="dropdown" aria-expanded="false">Ingeniería y Obras</a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="<?=BASE_PATH?>/ingenieria-y-obras/ingenieria">Ingeniería</a></li>
-                <li><a class="dropdown-item" href="<?=BASE_PATH?>/ingenieria-y-obras/management">Management</a></li>
-                <li><a class="dropdown-item" href="<?=BASE_PATH?>/ingenieria-y-obras/fabricacion">Fabricación</a></li>
-                <li><a class="dropdown-item" href="<?=BASE_PATH?>/ingenieria-y-obras/montajes-electromecanicos">Montajes Electromecanicos</a></li>
-                <li><a class="dropdown-item" href="<?=BASE_PATH?>/ingenieria-y-obras/automatizacion-y-control">Automatización y Control</a></li>
-                <li><a class="dropdown-item" href="<?=BASE_PATH?>/ingenieria-y-obras/mantenimiento">Mantenimiento</a></li>
+                <?php 
+                  $header_ingenierias = cargarIngenierias();
+                  if(!empty($header_ingenierias)){
+                    if(is_array($header_ingenierias)){
+                      foreach($header_ingenierias as $header_ingenieria){
+                        echo '<li><a class="dropdown-item" href="'.BASE_PATH.'/ingenieria-y-obras/'.$header_ingenieria['slug_ingenieria'].'">'.$header_ingenieria['titulo_ingenieria'].'</a></li>';
+                      }
+                    }
+                  }
+                ?>
               </ul>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="<?=BASE_PATH?>/process-solutions" data-bs-toggle="dropdown"  aria-expanded="false">Process Solutions</a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="<?=BASE_PATH?>/process-solutions/liquidos">Líquidos</a></li>
+                <?php 
+                  $header_process_solutions = cargarProcessSolutions();
+                  if(!empty($header_process_solutions)){
+                    if(is_array($header_process_solutions)){
+                      foreach($header_process_solutions as $header_process_solution){
+                        echo '<li><a class="dropdown-item" href="'.BASE_PATH.'/process-solutions/'.$header_process_solution['slug_process_solution'].'">'.$header_process_solution['titulo_process_solution'].'</a></li>';
+                      }
+                    }
+                  }
+                ?>
               </ul>
             </li>
             <li class="nav-item dropdown">
@@ -55,14 +68,16 @@
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="<?=BASE_PATH?>/mercados" data-bs-toggle="dropdown" aria-expanded="false">Mercados</a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="<?=BASE_PATH?>/mercados/frutas-y-verduras/">Frutas y verduras</a></li>
-                <li><a class="dropdown-item" href="<?=BASE_PATH?>/mercados/bebidas">Bebidas</a></li>
-                <li><a class="dropdown-item" href="<?=BASE_PATH?>/mercados/salsas-y-dulces">Salsas y dulces</a></li>
-                <li><a class="dropdown-item" href="<?=BASE_PATH?>/mercados/???/">???</a></li>
-                <li><a class="dropdown-item" href="<?=BASE_PATH?>/mercados/ingredientes">Ingredientes</a></li>
-                <li><a class="dropdown-item" href="<?=BASE_PATH?>/mercados/lacteos">Lácteos</a></li>
-                <li><a class="dropdown-item" href="<?=BASE_PATH?>/mercados/detergentes-y-productos-de-limpieza">Detergentes y productos de limpieza</a></li>
-                <li><a class="dropdown-item" href="<?=BASE_PATH?>/mercados/home-care">Home Care</a></li>
+                <?php 
+                  $header_mercados = cargarMercados();
+                  if(!empty($header_mercados)){
+                    if(is_array($header_mercados)){
+                      foreach($header_mercados as $header_mercado){
+                        echo '<li><a class="dropdown-item" href="'.BASE_PATH.'/mercados/'.$header_mercado['slug_mercado'].'">'.$header_mercado['titulo_mercado'].'</a></li>';
+                      }
+                    }
+                  }
+                ?>
               </ul>
             </li>
             <li class="nav-item dropdown">

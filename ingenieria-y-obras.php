@@ -54,17 +54,15 @@ include_once 'header.php';
         </div>
       </div>
       <div class="row gy-5">
-        <?php 
-          if(!empty($ingenierias)){
-            if(is_array($ingenierias)){
-              foreach($ingenierias as $ingenieria){
-                echo '  <div class="col-lg-4 d-flex flex-column align-items-center text-center">
-                          <img src="'.BASE_PATH.'/img/montajes-electromecanicos-600x600.jpg" alt="'.$ingenieria['titulo_ingenieria'].'" title="'.$ingenieria['titulo_ingenieria'].'" class="img-fluid max-width-60per rounded-circle mb-4">
-                          <h3 class="mb-4">'.$ingenieria['titulo_ingenieria'].'</h3>
-                          <p>'.$ingenieria['descripcion_corta_ingenieria'].'</p>
-                          <a href="'.BASE_PATH.'/'.$pagina['slug_pagina'].'/'.$ingenieria['slug_ingenieria'].'" type="button" class="btn btn-primary mt-auto">Conocer más</a>
-                        </div>';
-              }
+        <?php           
+          if(is_array($ingenierias)){
+            foreach($ingenierias as $ingenieria){
+              echo '  <div class="col-lg-4 d-flex flex-column align-items-center text-center">
+                        <img src="'.BASE_PATH.'/img/'.$pagina['slug_pagina'].'/'.$ingenieria['slug_ingenieria'].'/'.$ingenieria['foto_principal_chica_ingenieria'].'" alt="'.$ingenieria['titulo_ingenieria'].'" title="'.$ingenieria['titulo_ingenieria'].'" class="img-fluid max-width-60per rounded-circle mb-4">
+                        <h3 class="mb-4">'.$ingenieria['titulo_ingenieria'].'</h3>
+                        <p>'.$ingenieria['descripcion_corta_ingenieria'].'</p>
+                        <a href="'.BASE_PATH.'/'.$pagina['slug_pagina'].'/'.$ingenieria['slug_ingenieria'].'" type="button" class="btn btn-primary mt-auto">Conocer más</a>
+                      </div>';
             }
           }
         ?>
