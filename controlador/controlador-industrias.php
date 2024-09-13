@@ -13,7 +13,7 @@ function cargarIndustria($slug)
     
     $criterio = "WHERE slug_industria = '" . $slug . "' LIMIT 1";
     
-    $consulta   = obtenerPedido($campos, $tabla, $criterio, $inicio, $limite);
+    $consulta   = obtenerPedido($campos, $tabla, $criterio);
     
     $retorno    = !empty($consulta) ? $consulta[0] : array();
     
@@ -31,7 +31,7 @@ function cargarIndustriasMercados($id_mercado)
     
     $criterio = "WHERE id_mercado = '" . $id_mercado . "' ORDER BY id_industria ASC";
     
-    $consulta   = obtenerPedido($campos, $tabla, $criterio, $inicio, $limite);
+    $consulta   = obtenerPedido($campos, $tabla, $criterio);
     
     $retorno    = !empty($consulta) ? $consulta : array();
     
@@ -49,7 +49,7 @@ function cargarIndustriasProcessSolutions($id_process_solution)
     
     $criterio = "WHERE id_process_solution = '" . $id_process_solution . "' ORDER BY id_industria ASC";
     
-    $consulta   = obtenerPedido($campos, $tabla, $criterio, $inicio, $limite);
+    $consulta   = obtenerPedido($campos, $tabla, $criterio);
     
     $retorno    = !empty($consulta) ? $consulta : array();
     

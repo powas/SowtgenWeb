@@ -13,7 +13,7 @@ function cargarPagina($slug)
     
     $criterio = "WHERE slug_pagina = '" . $slug . "' LIMIT 1";
     
-    $consulta   = obtenerPedido($campos, $tabla, $criterio, $inicio, $limite);
+    $consulta   = obtenerPedido($campos, $tabla, $criterio);
     
     $retorno    = !empty($consulta) ? $consulta[0] : array();
     

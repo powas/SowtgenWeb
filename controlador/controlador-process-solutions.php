@@ -13,7 +13,7 @@ function cargarProcessSolution($slug)
     
     $criterio = "WHERE slug_process_solution = '" . $slug . "' LIMIT 1";
     
-    $consulta   = obtenerPedido($campos, $tabla, $criterio, $inicio, $limite);
+    $consulta   = obtenerPedido($campos, $tabla, $criterio);
     
     $retorno    = !empty($consulta) ? $consulta[0] : array();
     
@@ -31,7 +31,7 @@ function cargarProcessSolutions()
     
     $criterio = " ORDER BY id_process_solution ASC";
     
-    $consulta   = obtenerPedido($campos, $tabla, $criterio, $inicio, $limite);
+    $consulta   = obtenerPedido($campos, $tabla, $criterio);
     
     $retorno    = !empty($consulta) ? $consulta : array();
     

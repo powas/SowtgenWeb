@@ -31,7 +31,7 @@ function cargarMaquinasMercados($id_mercado)
     
     $criterio = "WHERE id_mercado = '" . $id_mercado . "' GROUP BY id_maquina ORDER BY id_maquina ASC";
     
-    $consulta   = obtenerPedido($campos, $tabla, $criterio, $inicio, $limite);
+    $consulta   = obtenerPedido($campos, $tabla, $criterio);
     
     $retorno    = !empty($consulta) ? $consulta : array();
     
@@ -49,7 +49,7 @@ function cargarMaquinasIndustrias($id_industria)
     
     $criterio = "WHERE id_industria = '" . $id_industria . "' GROUP BY id_maquina ORDER BY id_maquina ASC";
     
-    $consulta   = obtenerPedido($campos, $tabla, $criterio, $inicio, $limite);
+    $consulta   = obtenerPedido($campos, $tabla, $criterio);
     
     $retorno    = !empty($consulta) ? $consulta : array();
     
@@ -67,7 +67,7 @@ function cargarMaquinasProcessSolutions($id_process_solution)
     
     $criterio = "WHERE id_process_solution = '" . $id_process_solution . "' GROUP BY id_maquina ORDER BY id_maquina ASC";
     
-    $consulta   = obtenerPedido($campos, $tabla, $criterio, $inicio, $limite);
+    $consulta   = obtenerPedido($campos, $tabla, $criterio);
     
     $retorno    = !empty($consulta) ? $consulta : array();
     
