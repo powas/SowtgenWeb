@@ -54,6 +54,14 @@ li:not(.nav-item) {
         box-shadow: 0 0 0 1px $color2;
     }
 }
+.form-control-borde {
+    padding: 13px;
+    border-color: #4579FF;
+    &:focus {
+        border-color: #111E6C;
+        box-shadow: 0 0 0 1px #111E6C;
+    }
+}
 *::placeholder {
     color: $color1 !important;
 }

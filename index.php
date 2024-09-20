@@ -11,6 +11,9 @@ if($caracter === '/'){
 // Definir las rutas y sus correspondientes controladores
 $routes = array(
   '' => 'pagina-principal.php',
+  '404' => 'error404.php',
+  'contacto' => 'contacto.php',
+  'buscador' => 'buscador.php',
   'ingenieria-y-obras' => 'ingenieria-y-obras.php',
   'process-solutions' => 'process-solutions.php',
   'mercados' => 'mercados.php',
