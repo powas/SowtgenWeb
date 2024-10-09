@@ -33,16 +33,22 @@ include_once 'header.php';
             </div>
         </div>
     </section>
-    <section class="pt-5 pt-lg-6">
-        <div class="container">
-            <div class="row">
-                <div class="bg-image text-center shadow-1-strong rounded py-6" style="background-image: url('http://localhost/SowtgenWeb/img/buscador.png'); background-repeat: no-repeat; background-position: center;">
-                    <h2 class="py-6 my-5">Lo sentimos.<br>
-                    No encontramos lo que buscabas.</h2>
-                </div>
-            </div>
+
+  <section class="py-5 py-lg-6">
+    <div class="container py-5 py-lg-6">
+      <div class="row">
+        <div class="col-12 text-center">
+          <img src="http://localhost/SowtgenWeb/img/lupa.svg" alt="Amplia Experiencia" title="Amplia Experiencias" class="w-25">
         </div>
-    </section>
+      </div>
+      <div class="row">
+        <div class="col text-center">
+            <h2 class="py-4">Lo sentimos.<br>
+            No encontramos lo que buscabas.</h2>
+        </div>
+      </div>
+    </div>
+  </section>
 
     <section class="pt-5 pt-lg-6">
         <div class="container">
@@ -123,63 +129,5 @@ include_once 'header.php';
                 </nav>
             </div>
         </div>
-    </section>
-
-    <section class="pb-6">
-        <div class="container">
-            <div class="row">
-                <div class="d-flex flex-column p-5 col-8">
-                    <h1>Proyectos</h1>
-                    <p>Acá sería conveniente tener un breve texto introductorio que hable sobre los productos que puede ofrecer Sowtgen.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row gy-4">        
-                <div class="col-6 col-md-4 col-lg-4 px-5">
-                    <a href="http://localhost/SowtgenWeb/ingenieria-y-obras/management" class="proyectos">
-                        <img src="http://localhost/SowtgenWeb/img/proyectos/imagen-1.jpg" alt="" title="" class="img-fluid">
-                        <h6 class="p-3">Nuevo concentrador de mosto</h6>
-                    </a>
-                </div>  
-                <div class="col-6 col-md-4 col-lg-4 px-5">
-                    <a href="http://localhost/SowtgenWeb/ingenieria-y-obras/fabricacion" class="proyectos">
-                        <img src="http://localhost/SowtgenWeb/img/proyectos/imagen-2.jpg" alt="" title="" class="img-fluid">
-                        <h6 class="p-3">Nuevo concentrador de mosto</h6>
-                    </a>
-                </div>  
-                <div class="col-6 col-md-4 col-lg-4 px-5">
-                    <a href="http://localhost/SowtgenWeb/ingenieria-y-obras/montajes-electromecanicos" class="proyectos">
-                        <img src="http://localhost/SowtgenWeb/img/proyectos/imagen-3.jpg" alt="" title="" class="img-fluid">
-                        <h6 class="p-3">Nuevo concentrador de mosto</h6>
-                    </a>
-                </div>
-                 <div class="col-6 col-md-4 col-lg-4 px-5">
-                    <a href="http://localhost/SowtgenWeb/ingenieria-y-obras/management" class="proyectos">
-                        <img src="http://localhost/SowtgenWeb/img/proyectos/imagen-4.jpg" alt="" title="" class="img-fluid">
-                        <h6 class="p-3">Nuevo concentrador de mosto</h6>
-                    </a>
-                </div>  
-                <div class="col-6 col-md-4 col-lg-4 px-5">
-                    <a href="http://localhost/SowtgenWeb/ingenieria-y-obras/fabricacion" class="proyectos">
-                        <img src="http://localhost/SowtgenWeb/img/proyectos/imagen-5.jpg" alt="" title="" class="img-fluid">
-                        <h6 class="p-3">Nuevo concentrador de mosto</h6>
-                    </a>
-                </div>  
-                <div class="col-6 col-md-4 col-lg-4 px-5">
-                    <a href="http://localhost/SowtgenWeb/ingenieria-y-obras/montajes-electromecanicos" class="proyectos">
-                        <img src="http://localhost/SowtgenWeb/img/proyectos/imagen-6.jpg" alt="" title="" class="img-fluid">
-                        <h6 class="p-3">Nuevo concentrador de mosto</h6>
-                    </a>
-                </div>
-                <div class="col-6 col-md-4 col-lg-4 px-5">
-                    <a href="http://localhost/SowtgenWeb/ingenieria-y-obras/montajes-electromecanicos" class="proyectos">
-                        <img src="http://localhost/SowtgenWeb/img/proyectos/imagen-7.jpg" alt="" title="" class="img-fluid">
-                        <h6 class="p-3">Nuevo concentrador de mosto</h6>
-                    </a>
-                </div> 
-            </div>
-        </div>
-    </section>
+    </section>    
 </main>

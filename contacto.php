@@ -9,7 +9,7 @@ include_once 'header.php';
 ?>
 
 <main class="flex-shrink-0">
-<section class="bg-color2 py-5 py-lg-6">
+<section class="py-5 py-lg-6">
     <div class="container">
       <div class="row">
         <div class="col-md-6 mx-auto">

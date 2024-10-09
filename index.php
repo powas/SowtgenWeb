@@ -14,6 +14,7 @@ $routes = array(
   '404' => 'error404.php',
   'contacto' => 'contacto.php',
   'buscador' => 'buscador.php',
+  'proyectos' => 'proyectos.php',
   'ingenieria-y-obras' => 'ingenieria-y-obras.php',
   'process-solutions' => 'process-solutions.php',
   'mercados' => 'mercados.php',
