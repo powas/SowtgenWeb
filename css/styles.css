@@ -68,8 +68,7 @@ li:not(.nav-item) {
   display: block;
   width: 100%;
   padding: 6px 12px 6px 40px;
-  @include font-size($input-font-size);
-  appearance: none; // Fix appearance for date inputs in Safari
+  appearance: none; 
   background-clip: padding-box;
   border: 1px solid #4579FF;
   border-radius: 0.375rem;
@@ -609,6 +608,9 @@ header nav button.btn:hover {
     display: block !important;
     margin-top: 0 !important;
     transition: all 0.8s ease;
+  }
+  .text-responsive {
+    font-size: 16px !important;
   }
 }
 .btn-mobile-filters {
