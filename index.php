@@ -59,7 +59,7 @@ else{
   }
 
   if(!$flagCoincidencia){
-    // Manejar la ruta no encontrada    
+    include_once $routes['404'];   
   }  
 }
 

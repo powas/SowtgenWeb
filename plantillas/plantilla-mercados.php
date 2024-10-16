@@ -1,12 +1,10 @@
 <?php
-//REVISAR PARA QUE NO ESTE HARDCODEADO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 $pagina = cargarPagina('mercados');
 $mercado = cargarMercado($param);
 $mercados = cargarMercados();
 
 if(empty($mercado)){
-  // Manejar la ruta no encontrada  
-  header('Location: error');
+  header('Location: ../404');
 }
 
 $paginaIndustria = cargarPagina('industrias');
@@ -68,7 +66,7 @@ include_once 'header.php';
             if(isset($maquinas)){
               foreach($maquinas as $maquina){
                 echo '  <div class="col-12 col-lg-6 col-xxl-3">
-                            <a href="'.BASE_PATH.'/'.$paginaMaquina['slug_pagina'].'/'.$maquina['slug_maquina'].'" class="white-box">
+                            <a href="'.BASE_PATH.'/'.$paginaMaquina['slug_pagina'].'/'.$maquina['slug_maquina'].'" class="white-box white-box-icon">
                               <h6 class="d-inline-block m-3">'.$maquina['titulo_maquina'].'</h6>
                             </a>
                         </div>';

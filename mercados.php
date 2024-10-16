@@ -1,12 +1,10 @@
 <?php
-//REVISAR PARA QUE NO ESTE HARDCODEADO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 $pagina = cargarPagina('mercados');
 
 $mercados = cargarMercados();
 
-if(empty($mercados)){
-  // Manejar la ruta no encontrada  
-  header('Location: error');
+if(empty($mercados)){ 
+  header('Location: 404');
 }
 
 $title = $pagina['titulo_pagina'];
@@ -35,7 +33,7 @@ include_once 'header.php';
     </div>
     <div class="container-fluid fullheight g-0 pe-none">
       <div class="row">
-        <div class="col-xl-5 ms-auto" style="background-image: url(<?=BASE_PATH?>/img/ingenieria-y-obras-1200x800.jpg);background-size:cover;background-position:center;">
+        <div class="col-xl-5 ms-auto" style="background-image: url(<?=BASE_PATH?>/img/<?=$pagina['slug_pagina']?>/mercados-background.jpg);background-size:cover;background-position:center;">
         </div>
       </div>
     </div>

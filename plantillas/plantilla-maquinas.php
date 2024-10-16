@@ -1,15 +1,16 @@
 <?php
-//REVISAR PARA QUE NO ESTE HARDCODEADO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 $pagina = cargarPagina('equipos');
 $maquina = cargarMaquina($param);
 
-if(empty($maquina)){
-  // Manejar la ruta no encontrada  
-  header('Location: error');
+if(empty($maquina)){ 
+  header('Location: ../404');
 }
 
 $title = $maquina['titulo_maquina'];
 $description = $maquina['descripcion_corta_maquina'];
+
+$paginaIndustria = cargarPagina('industrias');
+$industrias = cargarIndustriasMaquinas($maquina['id_maquina']);
 
 include_once 'header.php';
 ?>
@@ -28,7 +29,7 @@ include_once 'header.php';
       <div class="container">
         <div class="row">
           <div class="col-xl-7 ms-auto">
-          <img src="<?=BASE_PATH?>/img/pasteurizadores-1200x800.png" alt="Pasteurizadores" title="Pasteurizadores" class="img-fluid">
+          <img src="<?=BASE_PATH?>/img/<?=$pagina['slug_pagina']?>/<?=$maquina['slug_maquina']?>/<?=$maquina['foto_grande_maquina']?>" alt="Pasteurizadores" title="Pasteurizadores" class="img-fluid">
           </div>
         </div>
       </div>
@@ -84,83 +85,26 @@ include_once 'header.php';
   </section>
   <section class="py-5 py-lg-6">
     <div class="container">
-    <div class="row">
+      <div class="row">
         <div class="col">
-          <h2 class="mb-3">Aplicaciones en la industria</h2>
-          <select class="selectpicker mb-4">
-            <option>Mustard</option>
-            <option>Ketchup</option>
-            <option>Barbecue</option>
-        </select>
+          <h2>Aplicaciones en la industria</h2>
         </div>
       </div>
       <div class="row gy-4">
-        <div class="col-12 col-lg-6 col-xxl-3">
-            <a href="/mercados/bedidas/gaseosas/" class="white-box">
-              <img src="/img/icono-gaseosas.svg" alt="Gaseosas" title="Gaseosas" class="my-3 ms-3">
-              <h6 class="d-inline-block m-3">Gaseosas</h6>
-            </a>
-        </div>
-        <div class="col-12 col-lg-6 col-xxl-3">
-            <a href="/mercados/bedidas/jugos-y-aguas-saborizadas/" class="white-box">
-              <img src="/img/icono-jugos-y-aguas-saborizadas.svg" alt="Jugos y aguas saborizadas" title="Jugos y aguas saborizadas" class="my-3 ms-3">
-              <h6 class="d-inline-block m-3">Jugos y aguas saborizadas</h6>
-            </a>
-        </div>
-        <div class="col-12 col-lg-6 col-xxl-3">
-            <a href="/mercados/bedidas/cervezas/" class="white-box">
-              <img src="/img/icono-cervezas.svg" alt="Cervezas" title="Cervezas" class="my-3 ms-3">
-              <h6 class="d-inline-block m-3">Cervezas</h6>
-            </a>
-        </div>
-        <div class="col-12 col-lg-6 col-xxl-3">
-            <a href="/mercados/bedidas/bebidas-espirituosas/" class="white-box">
-              <img src="/img/icono-bebidas-espirituosas.svg" alt="Bebidas espirituosas" title="Bebidas espirituosas" class="my-3 ms-3">
-              <h6 class="d-inline-block m-3">Bebidas espirituosas</h6>
-            </a>
-        </div>
-        <div class="col-12 col-lg-6 col-xxl-3">
-            <a href="/mercados/salsas-y-dulces/aderezos/" class="white-box">
-              <img src="/img/icono-aderezos.svg" alt="Aderezos" title="Aderezos" class="my-3 ms-3">
-              <h6 class="d-inline-block m-3">Aderezos</h6>
-            </a>
-        </div>
-        <div class="col-12 col-lg-6 col-xxl-3">
-            <a href="/mercados/salsas-y-dulces/salsas/" class="white-box">
-              <img src="/img/icono-salsas.svg" alt="Salsas" title="Salsas" class="my-3 ms-3">
-              <h6 class="d-inline-block m-3">Salsas</h6>
-            </a>
-        </div>
-        <div class="col-12 col-lg-6 col-xxl-3">
-            <a href="/mercados/salsas-y-dulces/dulces/" class="white-box">
-              <img src="/img/icono-dulces.svg" alt="Dulces" title="Dulces" class="my-3 ms-3">
-              <h6 class="d-inline-block m-3">Dulces</h6>
-            </a>
-        </div>
-        <div class="col-12 col-lg-6 col-xxl-3">
-            <a href="/mercados/lacteos/leche/" class="white-box">
-              <img src="/img/icono-leche.svg" alt="Leche" title="Leche" class="my-3 ms-3">
-              <h6 class="d-inline-block m-3">Leche</h6>
-            </a>
-        </div>
-        <div class="col-12 col-lg-6 col-xxl-3">
-            <a href="/mercados/lacteos/yogurt/" class="white-box">
-              <img src="/img/icono-yogurt.svg" alt="Yogurt" title="Yogurt" class="my-3 ms-3">
-              <h6 class="d-inline-block m-3">Yogurt</h6>
-            </a>
-        </div>
-        <div class="col-12 col-lg-6 col-xxl-3">
-            <a href="/mercados/lacteos/crema/" class="white-box">
-              <img src="/img/icono-crema.svg" alt="Crema" title="Crema" class="my-3 ms-3">
-              <h6 class="d-inline-block m-3">Crema</h6>
-            </a>
-        </div>
-        <div class="col-12 col-lg-6 col-xxl-3">
-            <a href="/mercados/lacteos/postres/" class="white-box">
-              <img src="/img/icono-postres.svg" alt="Postres" title="Postres" class="my-3 ms-3">
-              <h6 class="d-inline-block m-3">Postres</h6>
-            </a>
-        </div>
+      <?php 
+          if(!empty($industrias)){
+            if(isset($industrias)){
+              foreach($industrias as $industria){
+                echo '  <div class="col-12 col-lg-6 col-xxl-3">
+                            <a href="'.BASE_PATH.'/'.$paginaIndustria['slug_pagina'].'/'.$industria['slug_industria'].'" class="white-box white-box-icon">
+                              <img src="'.BASE_PATH.'/img/'.$paginaIndustria['slug_pagina'].'/'.$industria['slug_industria'].'/'.$industria['icono_industria'].'" alt="'.$industria['titulo_industria'].'" title="'.$industria['titulo_industria'].'" class="ms-3 my-3">
+                              <h6 class="d-inline-block m-3">'.$industria['titulo_industria'].'</h6>
+                            </a>
+                        </div>';
+              }
+            }
+          }
+        ?>       
       </div>
     </div>
   </section>

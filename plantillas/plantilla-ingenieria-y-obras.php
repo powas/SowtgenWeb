@@ -1,12 +1,10 @@
 <?php
-//REVISAR PARA QUE NO ESTE HARDCODEADO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 $pagina = cargarPagina('ingenieria-y-obras');
 $ingenieria = cargarIngenieria($param);
 $ingenierias = cargarIngenierias();
 
 if(empty($ingenieria)){
-  // Manejar la ruta no encontrada  
-  header('Location: error');
+  header('Location: ../404');
 }
 
 $title = $ingenieria['titulo_ingenieria'];

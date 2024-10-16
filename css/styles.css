@@ -442,6 +442,7 @@ section {
   bottom: 0;
   border-top-right-radius: 300px;
   border-bottom-right-radius: 300px;
+  mix-blend-mode: hard-light;
 }
 
 .max-width-60per {
@@ -458,7 +459,7 @@ section {
   display: block;
   width: 80px;
   height: 8px;
-  background-color: #e2f5f4;
+  background-color: #FF7A00;
   border-radius: 12px;
 }
 
@@ -484,6 +485,11 @@ section {
 }
 .white-box:hover {
   color: #4579FF;
+}
+
+.white-box-icon {
+  display: flex;
+  align-items: center;
 }
 
 .circulos {

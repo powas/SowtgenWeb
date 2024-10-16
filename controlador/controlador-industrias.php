@@ -55,4 +55,22 @@ function cargarIndustriasProcessSolutions($id_process_solution)
     
     return $retorno;
 }
+
+function cargarIndustriasMaquinas($id_maquina) 
+{ 
+    $consulta = array();
+        
+    $campos     = "*";
+    $tabla      = "vista_maquinas_industrias";
+    $inicio     = "";
+    $limite     = "";
+    
+    $criterio = "WHERE id_maquina = '" . $id_maquina . "' ORDER BY id_maquina ASC";
+    
+    $consulta   = obtenerPedido($campos, $tabla, $criterio);
+    
+    $retorno    = !empty($consulta) ? $consulta : array();
+    
+    return $retorno;
+}
 ?>

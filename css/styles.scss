@@ -334,7 +334,8 @@ section {
         top: 0;
         bottom: 0;
         border-top-right-radius: 300px;
-        border-bottom-right-radius: 300px;
+        border-bottom-right-radius: 300px;        
+        mix-blend-mode: hard-light;
     }
 }
 .max-width-60per {
@@ -349,7 +350,7 @@ section {
         display: block;
         width: 80px;
         height: 8px;
-        background-color: $color7;
+        background-color: $color6;
         border-radius: 12px;
     }
 }
@@ -376,6 +377,10 @@ section {
     &:hover {
         color: $color2;
     }
+}
+.white-box-icon {
+    display: flex;
+    align-items: center;
 }
 .circulos {
     position: relative;

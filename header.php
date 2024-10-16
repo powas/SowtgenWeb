@@ -39,6 +39,7 @@
                       }
                     }
                   }
+                  echo '<li><a class="dropdown-item" href="'.BASE_PATH.'/ingenieria-y-obras">Ver Todos</a></li>';
                 ?>
               </ul>
             </li>
@@ -54,17 +55,10 @@
                       }
                     }
                   }
+                  echo '<li><a class="dropdown-item" href="'.BASE_PATH.'/process-solutions">Ver Todos</a></li>';
                 ?>
               </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="<?=BASE_PATH?>/equipamiento" data-bs-toggle="dropdown"  aria-expanded="false">Equipamiento</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
+            </li>            
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="<?=BASE_PATH?>/mercados" data-bs-toggle="dropdown" aria-expanded="false">Mercados</a>
               <ul class="dropdown-menu">
@@ -77,19 +71,15 @@
                       }
                     }
                   }
+                  echo '<li><a class="dropdown-item" href="'.BASE_PATH.'/mercados">Ver Todos</a></li>';
                 ?>
               </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="<?=BASE_PATH?>/proyectos" data-bs-toggle="dropdown"  aria-expanded="false">Proyectos</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
+            </li>            
+            <li class="nav-item">
+              <a class="nav-link" href="<?=BASE_PATH?>/proyectos">Proyectos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contacto</a>
+              <a class="nav-link" href="<?=BASE_PATH?>/contacto">Contacto</a>
             </li>
           </ul>
           <form class="d-flex" role="search">
