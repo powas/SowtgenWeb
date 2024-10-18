@@ -29,7 +29,7 @@ include_once 'header.php';
       <div class="container">
         <div class="row">
           <div class="col-xl-7 ms-auto">
-          <img src="<?=BASE_PATH?>/img/gaseosas-1200x1000.jpg" alt="Pasteurizadores" title="Pasteurizadores" class="img-fluid">
+          <img src="<?=BASE_PATH?>/img/<?=$pagina['slug_pagina']?>/<?=$industria['slug_industria']?>/<?=$industria['foto_grande_industria']?>" alt="<?=$industria['titulo_industria']?>" title="<?=$industria['titulo_industria']?>" class="img-fluid">
           </div>
         </div>
       </div>

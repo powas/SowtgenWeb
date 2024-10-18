@@ -25,7 +25,7 @@ include_once 'header.php';
       <div class="row mb-5 mb-lg-6">
         <div class="col-md-7 mx-auto text-center">
           <h2>¿Qué hacemos?</h2>
-          <p class="lead lh-lg">Nuestra estructura está compuesta por 3 unidades de negocio especializadas que pueden trabajar en conjunto o por separado con el fin de brindar <strong>soluciones desde su planificación</strong>, así como también acoplarse en el <strong>desarrollo de soluciones preexistentes</strong>.</p>
+          <p class="lead">Nuestra estructura está compuesta por 3 unidades de negocio especializadas que pueden trabajar en conjunto o por separado con el fin de brindar <strong>soluciones desde su planificación</strong>, así como también acoplarse en el <strong>desarrollo de soluciones preexistentes</strong>.</p>
         </div>
       </div>
       <div class="row ">

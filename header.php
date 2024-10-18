@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="<?php echo $description; ?>">
   <title><?php echo $title; ?> - Sowtgen</title>
+  <link rel="icon" type="image/png" href="/favicon-48x48.png" sizes="48x48" />
+  <link rel="icon" type="image/svg+xml" href="<?=BASE_PATH?>/img/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="<?=BASE_PATH?>/img/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="<?=BASE_PATH?>/img/favicon/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="Sowtgen" />
+  <link rel="manifest" href="<?=BASE_PATH?>/img/favicon/site.webmanifest" />
   <link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" >
   <link rel="stylesheet" href="<?=BASE_PATH?>/css/bootstrap-negative-margins.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">

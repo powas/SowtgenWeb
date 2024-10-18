@@ -547,6 +547,16 @@ section {
   margin: 20px 0 20px 20px;
 }
 
+.modal-proyectos .btn-close {
+  color: #111E6C;
+}
+.modal-proyectos .btn-close:focus {
+  box-shadow: none;
+}
+.modal-proyectos .btn-close:hover {
+  opacity: 0.8;
+}
+
 /*Header*/
 .bg-dark {
   --bs-bg-opacity: 1;

@@ -435,6 +435,17 @@ section {
         }
     }
 }
+
+.modal-proyectos .btn-close {
+    color: #111E6C;
+    &:focus {
+        box-shadow: none;
+    }
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
 /*Header*/
 .bg-dark {
     --bs-bg-opacity: 1;

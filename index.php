@@ -33,6 +33,7 @@ require_once 'controlador/controlador-process-solutions.php';
 require_once 'controlador/controlador-mercados.php';
 require_once 'controlador/controlador-industrias.php';
 require_once 'controlador/controlador-maquinas.php';
+require_once 'controlador/controlador-proyectos.php';
 
 // Comprobar si la ruta es simple y está definida, y dirigir la solicitud al controlador correspondiente
 if (array_key_exists($url, $routes)){

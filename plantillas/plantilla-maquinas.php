@@ -29,7 +29,7 @@ include_once 'header.php';
       <div class="container">
         <div class="row">
           <div class="col-xl-7 ms-auto">
-          <img src="<?=BASE_PATH?>/img/<?=$pagina['slug_pagina']?>/<?=$maquina['slug_maquina']?>/<?=$maquina['foto_grande_maquina']?>" alt="Pasteurizadores" title="Pasteurizadores" class="img-fluid">
+          <img src="<?=BASE_PATH?>/img/<?=$pagina['slug_pagina']?>/<?=$maquina['slug_maquina']?>/<?=$maquina['foto_grande_maquina']?>" alt="<?=$maquina['titulo_maquina']?>" title="<?=$maquina['titulo_maquina']?>" class="img-fluid">
           </div>
         </div>
       </div>
@@ -41,7 +41,7 @@ include_once 'header.php';
                 <h1><?php echo $title; ?></h1>
                 <?=$maquina['descripcion_maquina']?>
                 <div class="mt-auto">
-                  <a href="#" type="button" class="btn btn-primary mt-3 me-5">Descargar brochure <i class="las la-download"></i></a>
+                  <a href="<?=BASE_PATH?>/archivos/<?=$maquina['brochure_maquina']?>" type="button" class="btn btn-primary mt-3 me-5" download>Descargar brochure <i class="las la-download"></i></a>
                   <a href="#" type="button" class="btn btn-outline-primary mt-3">Solicitar asesoramiento</a>
                 </div>
             </div>
