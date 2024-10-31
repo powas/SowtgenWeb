@@ -7,60 +7,53 @@
                 <div class="col-xxl-9">
                     <div class="row">
                         <div class="col-md-6 col-lg-3">
-                            <h6>Process Solutions</h6>
+                            <h6>Ingeriería y Obras</h6>
                             <ul class="navbar-nav mb-3 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Frutas y verduras</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Líquidos</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Sólidos</a>
-                                </li>
+                                <?php 
+                                    $footer_ingenierias = cargarIngenierias();
+                                    if(!empty($footer_ingenierias)){
+                                        if(is_array($footer_ingenierias)){
+                                            foreach($footer_ingenierias as $footer_ingenieria){
+                                                echo '  <li class="nav-item">
+                                                            <a class="nav-link" href="'.BASE_PATH.'/ingenieria-y-obras/'.$footer_ingenieria['slug_ingenieria'].'">'.$footer_ingenieria['titulo_ingenieria'].'</a>
+                                                        </li>';
+                                            }
+                                        }
+                                    }
+                                ?>
                             </ul>
                         </div>
                         <div class="col-md-6 col-lg-3">
-                            <h6>Productos y equipos</h6>
+                            <h6>Process Solutions</h6>
                             <ul class="navbar-nav mb-3 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Bombas</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Válvulas</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Equipos</a>
-                                </li>
-                            </ul>
-                        </div>
+                                <?php 
+                                    $footer_process_solutions = cargarProcessSolutions();
+                                    if(!empty($footer_process_solutions)){
+                                        if(is_array($footer_process_solutions)){
+                                            foreach($footer_process_solutions as $footer_process_solution){
+                                                echo '  <li class="nav-item">
+                                                            <a class="nav-link" href="'.BASE_PATH.'/process-solutions/'.$footer_process_solution['slug_process_solution'].'">'.$footer_process_solution['titulo_process_solution'].'</a>
+                                                        </li>';
+                                            }
+                                        }
+                                    }
+                                ?>
+                        </div>                        
                         <div class="col-md-6 col-lg-3">
                             <h6>Mercados</h6>
                             <ul class="navbar-nav mb-3 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Frutas y verduras</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Bebidas</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Lácteos</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Salsas y dulces</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Ingredientes</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Alimentos sólidos y en polvo</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Detergentes y productos de limpieza</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Home Care</a>
-                                </li>
+                                <?php 
+                                    $footer_mercados = cargarMercados();
+                                    if(!empty($footer_mercados)){
+                                        if(is_array($footer_mercados)){
+                                            foreach($footer_mercados as $footer_mercado){
+                                                echo '  <li class="nav-item">
+                                                            <a class="nav-link" href="'.BASE_PATH.'/mercados/'.$footer_mercado['slug_mercado'].'">'.$footer_mercado['titulo_mercado'].'</a>
+                                                        </li>';
+                                            }
+                                        }
+                                    }
+                                ?>
                             </ul>
                         </div>
                         <div class="col-md-6 col-lg-3">
@@ -70,7 +63,7 @@
                                     <a class="nav-link" href="mailto:info@sowtgen.com"><i class="las la-envelope"></i>info@sowtgen.com</a>
                                 </li>
                                 <li class="nav-item mb-2">
-                                    <a class="nav-link" href="tel:+54 9 11 5741 8578"><i class="las la-phone"></i>+54 9 11 5741 8578</a>
+                                    <a class="nav-link" href="tel:+5491154580776"><i class="las la-phone"></i>+54 911 5458 0776</a>
                                 </li>
                                 <li class="nav-item mb-2">
                                     <a class="nav-link" href="#"><i class="las la-map-marker"></i>Parera 15, 1° piso | CABA</a>

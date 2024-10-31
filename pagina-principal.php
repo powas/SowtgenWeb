@@ -14,8 +14,17 @@ include_once 'header.php';
           <img src="<?=BASE_PATH?>/img/home-hero.png" alt="SOWTGEN" title="SOWTGEN" class="img-fluid position-relative">
         </div>
         <div class="col-lg-6 py-5 py-lg-6 z-0">
-          <h1 class="text-white mb-5 lh-base">Líder en soluciones integrales de ingeniería, procesos y tecnologías para industrias, medio ambiente y servicios.</h1>
-          <a href="#" type="button" class="btn btn-light">Contactanos</a>
+          <div id="carouselExampleAutoplaying" class="carousel slide mb-5" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <h1 class="text-white lh-base">Líder en soluciones integrales de ingeniería, procesos y tecnologías para industrias, medio ambiente y servicios.</h1>
+              </div>
+              <div class="carousel-item">
+                <span class="text-white lh-base h1">Comercialización de equipos GEA, válvulas, bombas y repuestos. Servicio de mantenimiento de equipos GEA.</span>
+              </div>
+            </div>
+          </div>
+          <a href="<?=BASE_PATH?>/contacto" type="button" class="btn btn-light">Contactanos</a>
         </div>
       </div>
     </div>
@@ -60,8 +69,8 @@ include_once 'header.php';
             <div class="featured-logo">
               <img src="<?=BASE_PATH?>/img/divisiones/sowtgen-elements-logo.svg" alt="SOWTGEN Elements" title="SOWTGEN Elements Logo" class="img-fluid">
             </div>
-            <p>Comercialización de equipos GEA, válvulas, bombas y repuestos. Servicio de mantenimiento de equipos GEA.</p>
-            <a href="<?=BASE_PATH?>/#" type="button" class="btn btn-primary">Conocer más</a>
+            <p>Comercialización de equipos GEA, válvulas, bombas y repuestos. Servicio de mantenimiento de equipos GEA. <strong>Catálogo próximamente.</strong></p>
+            <a href="<?=BASE_PATH?>/contacto" type="button" class="btn btn-primary">Consultar</a>
           </div>
         </div>
       </div>

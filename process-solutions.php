@@ -31,6 +31,7 @@ include_once 'header.php';
           <p class="lead mb-5">Ésta es la unidad dedicada a brindar soluciones para el desarrollo de procesos y fabricación de equipos tecnológicos que intervienen en los procesos industriales.</p>
           <p>Sus profesionales se especializan en el desarrollo integral de sistemas de procesamiento para la producción de alimentos, bebidas y productos de home & personal care.</p>
           <p>La unidad, interviene en proyectos desde el diseño, la construcción e implementación de procesos y tecnologías desarrolladas brindado soluciones de última generación.</p>
+          <p><strong>Comercialización de equipos GEA, válvulas, bombas y repuestos. Servicio de mantenimiento de equipos GEA.</strong></p>
         </div>
         <div class="col-xl-6 pb-5 pb-xl-0">
           <img src="<?=BASE_PATH?>/img/<?=$pagina['slug_pagina']?>/process-solutions-hero.png" alt="SOWTGEN" title="SOWTGEN" class="img-fluid">
