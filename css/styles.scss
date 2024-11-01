@@ -325,19 +325,36 @@ section {
 .home-hero-bg {
     position: relative;
     &:before {
-        content: "";
-        position: absolute;
-        background-color: $color1;
-        opacity: 0.75;
-        left: -2000px;
-        right: 50%;
-        top: 0;
-        bottom: 0;
-        border-top-right-radius: 300px;
-        border-bottom-right-radius: 300px;        
-        mix-blend-mode: hard-light;
+        @media (min-width: 992px){
+            content: "";
+            position: absolute;
+            background-color: #111E6C;
+            opacity: 0.75;
+            left: -2000px;
+            right: 50%;
+            top: 0;
+            bottom: 0;
+            border-top-right-radius: 300px;
+            border-bottom-right-radius: 300px;
+            mix-blend-mode: hard-light;
+        }           
     }
 }
+
+@media (max-width: 991.98px){
+    .home-hero:before {
+      content: "";
+      position: absolute;
+      background-color: #111E6C;
+      opacity: 0.75;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      mix-blend-mode: hard-light;
+    } 
+  }
+
 .max-width-60per {
     max-width: 60%;
 }
@@ -443,6 +460,17 @@ section {
     }
     &:hover {
         opacity: 0.8;
+    }
+}
+
+.content-proyect-description {
+    max-height: 230px;
+    overflow-y: auto;
+}
+
+@media (min-width: 1200px){
+    .content-proyect-description {
+      max-height: 400px;
     }
 }
 

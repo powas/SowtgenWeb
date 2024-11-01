@@ -9,7 +9,7 @@ include_once 'header.php';
 <main class="flex-shrink-0">
   <section class="bg-color3" style="background-image: url(<?=BASE_PATH?>/img/home-bg.jpg);background-size: cover;background-position: center;">
     <div class="container">
-      <div class="row flex-lg-row-reverse align-items-center">
+      <div class="row flex-lg-row-reverse align-items-center home-hero">
         <div class="col-lg-6 py-5 py-lg-6 home-hero-bg">
           <img src="<?=BASE_PATH?>/img/home-hero.png" alt="SOWTGEN" title="SOWTGEN" class="img-fluid position-relative">
         </div>
