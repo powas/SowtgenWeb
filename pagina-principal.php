@@ -17,12 +17,24 @@ include_once 'header.php';
           <div id="carouselExampleAutoplaying" class="carousel slide mb-5" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <h1 class="text-white lh-base">Líder en soluciones integrales de ingeniería, procesos y tecnologías para industrias, medio ambiente y servicios.</h1>
+                <h1 class="text-white lh-base">
+                  <span class="fw-normal">Líder en soluciones integrales de ingeniería, procesos y tecnologías para industrias, medio ambiente y servicios.</span><br>
+                  <span class="fw-black">Integramos nuestros proyectos con equipos y tecnología GEA.</span>
+                </h1>
               </div>
               <div class="carousel-item">
-                <span class="text-white lh-base h1">Comercialización de equipos GEA, válvulas, bombas y repuestos. Servicio de mantenimiento de equipos GEA.</span>
+                <span class="text-white lh-base h1 fw-normal">Comercialización de equipos GEA, válvulas, bombas y repuestos.</span><br>
+                <span class="text-white lh-base h1 fw-black">Servicio de mantenimiento de equipos de procesos.</span>
               </div>
             </div>
+            <button class="carousel-control-prev custom-control" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next custom-control" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
           <a href="<?=BASE_PATH?>/contacto" type="button" class="btn btn-light">Contactanos</a>
         </div>
@@ -69,7 +81,7 @@ include_once 'header.php';
             <div class="featured-logo">
               <img src="<?=BASE_PATH?>/img/divisiones/sowtgen-elements-logo.svg" alt="SOWTGEN Elements" title="SOWTGEN Elements Logo" class="img-fluid">
             </div>
-            <p>Comercialización de equipos GEA, válvulas, bombas y repuestos. Servicio de mantenimiento de equipos GEA. <strong>Catálogo próximamente.</strong></p>
+            <p>Comercialización de equipos GEA, válvulas, bombas y repuestos. Servicio de mantenimiento de equipos de procesos. <strong>Catálogo próximamente.</strong></p>
             <a href="<?=BASE_PATH?>/contacto" type="button" class="btn btn-primary">Consultar</a>
           </div>
         </div>

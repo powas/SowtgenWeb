@@ -42,7 +42,7 @@ include_once 'header.php';
               foreach($maquinas as $maquina){
                 echo '  <div class="col-6 col-md-4 col-lg-3">
                             <a href="'.BASE_PATH.'/'.$paginaMaquina['slug_pagina'].'/'.$maquina['slug_maquina'].'" class="white-box">
-                              <img src="'.BASE_PATH.'/img/'.$paginaMaquina['slug_pagina'].'/'.$maquina['slug_maquina'].'/'.$maquina['foto_chica_maquina'].'" alt="'.$maquina['titulo_maquina'].'" title="'.$maquina['titulo_maquina'].'">
+                              <img src="'.BASE_PATH.'/img/'.$paginaMaquina['slug_pagina'].'/'.$maquina['slug_maquina'].'/'.$maquina['foto_chica_maquina'].'" alt="'.$maquina['titulo_maquina'].'" title="'.$maquina['titulo_maquina'].'" class="img-fluid">
                               <h6 class="m-3">'.$maquina['titulo_maquina'].'</h6>
                             </a>
                         </div>';

@@ -38,7 +38,7 @@ include_once 'header.php';
                     $contadorProyectos = 0;
                     foreach($proyectos as $proyecto){
                         echo '  <div class="col-12 col-sm-6 col-lg-4 ps-4 pe-3 pb-3">
-                                    <a href="#" class="proyectos d-flex flex-column h-100" data-bs-toggle="modal" data-bs-target="#modal-proyectos-'.$contadorProyectos.'">
+                                    <a href="#" class="proyectos d-flex flex-column h-100 rounded-3 overflow-hidden" data-bs-toggle="modal" data-bs-target="#modal-proyectos-'.$contadorProyectos.'">
                                         <img src="'.BASE_PATH.'/img/'.$pagina['slug_pagina'].'/'.$proyecto['slug_proyecto'].'/'.$proyecto['foto_proyecto'].'" alt="'.$proyecto['titulo_proyecto'].'" class="img-fluid">
                                         <h6 class="p-3 mb-0 text-responsive flex-grow-1 d-flex align-items-center">'.$proyecto['titulo_proyecto'].'</h6>
                                     </a>

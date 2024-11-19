@@ -74,7 +74,7 @@
                 </div>
             </div>
             <div class="row mb-3">
-                <div class="col text-center"><small>© <?php echo date("Y"); ?> Copyright Sowtgen - Todos los derechos reservados. Realizado por <strong><a class="developer-page" href="https://estudiothinkb.com/">Think B</a></strong></small></div>
+                <div class="col text-center"><small>© <?php echo date("Y"); ?> Copyright Sowtgen - Todos los derechos reservados. Realizado por <strong>Kyra</strong></small></div>
             </div>
         </div>
     </footer>

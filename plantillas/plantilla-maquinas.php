@@ -26,9 +26,9 @@ include_once 'header.php';
   </section>
   <section>
     <div class="bg-color5 contentheight">
-      <div class="container">
+      <div class="container<?=(($maquina['slug_maquina'] == 'process-automations') ? '-fluid' : '')?>">
         <div class="row">
-          <div class="col-xl-7 ms-auto">
+          <div class="<?=(($maquina['slug_maquina'] == 'process-automations') ? 'col p-0' : 'col-xl-7 ms-auto')?>">
           <img src="<?=BASE_PATH?>/img/<?=$pagina['slug_pagina']?>/<?=$maquina['slug_maquina']?>/<?=$maquina['foto_grande_maquina']?>" alt="<?=$maquina['titulo_maquina']?>" title="<?=$maquina['titulo_maquina']?>" class="img-fluid">
           </div>
         </div>
@@ -42,47 +42,41 @@ include_once 'header.php';
                 <?=$maquina['descripcion_maquina']?>
                 <div class="mt-auto">
                   <a href="<?=BASE_PATH?>/archivos/<?=$maquina['brochure_maquina']?>" type="button" class="btn btn-primary mt-3 me-5" download>Descargar brochure <i class="las la-download"></i></a>
-                  <a href="#" type="button" class="btn btn-outline-primary mt-3">Solicitar asesoramiento</a>
+                  <a href="<?=BASE_PATH?>/contacto" type="button" class="btn btn-outline-primary mt-3">Solicitar asesoramiento</a>
                 </div>
             </div>
         </div>
       </div>
     </div>
   </section>
-  <section class="pt-5 pt-lg-6">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg mb-5 mb-lg-0">
-                <div class="bg-color3 rounded-1 h-100 p-4 ">
-                    <h2>Características Técnicas</h2>
-                    <ul>
-                        <li>Intercambiador de calor y separador dentro de una misma carcasa</li>
-                        <li>Tecnología de Casco y Placas completamente soldadas</li>
-                        <li>No se requiere cañería externa</li>
-                        <li>Separador de alta eficiencia</li>
-                        <li>Baja carga de refrigerante</li>
-                        <li>Placas circulares</li>
-                        <li>Apto para amoníaco y otros refrigerantes</li>
-                    </ul>
+  <?php 
+    if(!empty($maquina['titulo_columna1_maquina']) || !empty($maquina['descripcion_columna1_maquina'])){
+      echo '  <section class="pt-5 pt-lg-6">
+                <div class="container">
+                  <div class="row">
+                      <div class="col-lg mb-5 mb-lg-0">
+                          <div class="bg-color3 rounded-1 h-100 p-4 ">
+                              <h2>'.$maquina['titulo_columna1_maquina'].'</h2>
+                              <ul class="'.((!empty($maquina['titulo_columna2_maquina']) || !empty($maquina['descripcion_columna2_maquina'])) ? ("") : ("two-columns")).'">
+                                  '.$maquina['descripcion_columna1_maquina'].'
+                              </ul>
+                          </div>
+                      </div>'; 
+                      if(!empty($maquina['titulo_columna2_maquina']) || !empty($maquina['descripcion_columna2_maquina'])){
+                        echo '  <div class="col-lg">
+                                    <div class="bg-color7 rounded-1 h-100 p-4">
+                                        <h2>'.$maquina['titulo_columna2_maquina'].'</h2>
+                                        <ul>
+                                            '.$maquina['descripcion_columna2_maquina'].'
+                                        </ul>
+                                    </div>
+                                </div>';
+                      }           
+      echo '      </div>
                 </div>
-            </div>
-            <div class="col-lg">
-                <div class="bg-color7 rounded-1 h-100 p-4">
-                    <h2>Cualidades</h2>
-                    <ul>
-                        <li>Intercambiador de calor y separador dentro de una misma carcasa</li>
-                        <li>Tecnología de Casco y Placas completamente soldadas</li>
-                        <li>No se requiere cañería externa</li>
-                        <li>Separador de alta eficiencia</li>
-                        <li>Baja carga de refrigerante</li>
-                        <li>Placas circulares</li>
-                        <li>Apto para amoníaco y otros refrigerantes</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-  </section>
+              </section>';
+    }    
+  ?>  
   <section class="py-5 py-lg-6">
     <div class="container">
       <div class="row">

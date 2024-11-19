@@ -23,7 +23,7 @@ main {
 }
 
 .h1, h1 {
-  font-size: 36px;
+  font-size: 33px;
 }
 
 .h2, h2 {
@@ -40,6 +40,10 @@ main {
 
 .h5, h5 {
   font-size: 18px;
+}
+
+.fw-black {
+  font-weight: 900;
 }
 
 hr {
@@ -77,7 +81,7 @@ li:not(.nav-item) {
   box-shadow: 0 0 0 1px #111E6C;
 } 
 
-.button-search{
+.button-search {
   position: absolute;
   color: #111E6C;
   border-color: transparent;
@@ -126,6 +130,21 @@ ul.pagination {
 
 .proyectos {
   text-decoration: none !important; 
+}
+
+.custom-control.carousel-control-prev, .custom-control.carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  width: 3rem;
+  height: 3rem;
+}
+.custom-control.carousel-control-prev {
+  left: -3rem;
+}
+.custom-control.carousel-control-next {
+  right: -3rem;
 }
 
 *::-moz-placeholder {

@@ -65,9 +65,10 @@ include_once 'header.php';
           if(!empty($maquinas)){
             if(isset($maquinas)){
               foreach($maquinas as $maquina){
-                echo '  <div class="col-12 col-lg-6 col-xxl-3">
-                            <a href="'.BASE_PATH.'/'.$paginaMaquina['slug_pagina'].'/'.$maquina['slug_maquina'].'" class="white-box white-box-icon">
-                              <h6 class="d-inline-block m-3">'.$maquina['titulo_maquina'].'</h6>
+                echo '  <div class="col-6 col-md-4 col-lg-3">
+                            <a href="'.BASE_PATH.'/'.$paginaMaquina['slug_pagina'].'/'.$maquina['slug_maquina'].'" class="white-box">
+                              <img src="'.BASE_PATH.'/img/'.$paginaMaquina['slug_pagina'].'/'.$maquina['slug_maquina'].'/'.$maquina['foto_chica_maquina'].'" alt="'.$maquina['titulo_maquina'].'" title="'.$maquina['titulo_maquina'].'" class="img-fluid">
+                              <h6 class="m-3">'.$maquina['titulo_maquina'].'</h6>
                             </a>
                         </div>';
               }

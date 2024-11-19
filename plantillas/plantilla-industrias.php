@@ -26,10 +26,9 @@ include_once 'header.php';
   </section>
   <section>
     <div class="bg-color5 fullheight">
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-7 ms-auto">
-          <img src="<?=BASE_PATH?>/img/<?=$pagina['slug_pagina']?>/<?=$industria['slug_industria']?>/<?=$industria['foto_grande_industria']?>" alt="<?=$industria['titulo_industria']?>" title="<?=$industria['titulo_industria']?>" class="img-fluid">
+      <div class="container-fluid h-100">
+        <div class="row h-100">
+          <div class="col-xl-7 ms-auto h-100" style="background-image: url(<?=BASE_PATH?>/img/<?=$pagina['slug_pagina']?>/<?=$industria['slug_industria']?>/<?=$industria['foto_grande_industria']?>);background-position: center;background-size: cover;min-height: 300px;">
           </div>
         </div>
       </div>
@@ -57,9 +56,10 @@ include_once 'header.php';
           if(!empty($maquinas)){
             if(isset($maquinas)){
               foreach($maquinas as $maquina){
-                echo '  <div class="col-12 col-lg-6 col-xxl-3">
-                            <a href="'.BASE_PATH.'/'.$paginaMaquina['slug_pagina'].'/'.$maquina['slug_maquina'].'" class="white-box white-box-icon">
-                              <h6 class="d-inline-block m-3">'.$maquina['titulo_maquina'].'</h6>
+                echo '  <div class="col-6 col-md-4 col-lg-3">
+                            <a href="'.BASE_PATH.'/'.$paginaMaquina['slug_pagina'].'/'.$maquina['slug_maquina'].'" class="white-box">
+                              <img src="'.BASE_PATH.'/img/'.$paginaMaquina['slug_pagina'].'/'.$maquina['slug_maquina'].'/'.$maquina['foto_chica_maquina'].'" alt="'.$maquina['titulo_maquina'].'" title="'.$maquina['titulo_maquina'].'" class="img-fluid">
+                              <h6 class="m-3">'.$maquina['titulo_maquina'].'</h6>
                             </a>
                         </div>';
               }

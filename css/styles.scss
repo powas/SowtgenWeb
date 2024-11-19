@@ -21,7 +21,7 @@ main {
     margin-bottom: 2rem;
 }
 .h1, h1 {
-    font-size: 36px;
+    font-size: 33px;
 }
 .h2, h2 {
     font-size: 30px;
@@ -34,6 +34,9 @@ main {
 }
 .h5, h5 {
     font-size: 18px;
+}
+.fw-black {
+    font-weight: 900;
 }
 hr  {
     color: $color1;
@@ -62,6 +65,72 @@ li:not(.nav-item) {
         box-shadow: 0 0 0 1px #111E6C;
     }
 }
+.button-search {
+    position: absolute;
+    color: #111E6C;
+    border-color: transparent;
+    padding: 6px 6px 6px 15px !important;
+}
+
+.page-link {
+    border-radius: 20px;
+    padding: 8px 15px;
+    background-color: unset;
+    color: #111E6C;
+    border: 1px solid #0d6efd;
+}
+
+.no-selected .page-link {
+    border: unset;
+}
+
+.page-item:not(:first-child) .page-link {
+    margin-left: 0px;
+}
+
+.page-item:last-child .page-link, .page-item:first-child .page-link {
+    border: none;
+    color: #0d6efd !important;
+}
+
+.page-item:last-child {
+    padding-left: 30px;
+}
+
+.page-item:first-child {
+    padding-right: 30px;
+}
+
+ul.pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.proyectos h6 {
+    background-color: #111E6C;
+    color: #fff;
+    font-size: 24px;
+}
+
+.proyectos {
+    text-decoration: none !important; 
+}
+
+.custom-control.carousel-control-prev, .custom-control.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    width: 3rem;
+    height: 3rem;
+}
+.custom-control.carousel-control-prev {
+    left: -3rem;
+}
+.custom-control.carousel-control-next {
+    right: -3rem;
+}
+
 *::placeholder {
     color: $color1 !important;
 }
