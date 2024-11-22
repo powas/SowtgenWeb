@@ -68,24 +68,12 @@ li:not(.nav-item) {
   border-color: none;
   box-shadow: 0 0 0 1px #4579FF;
 }
-.form-control-borde {
-  display: block;
-  width: 100%;
-  padding: 6px 12px 6px 40px;
-  appearance: none; 
-  background-clip: padding-box;
-  border: 1px solid #4579FF;
-  border-radius: 0.375rem;
-}
-.form-control-borde:focus {
-  box-shadow: 0 0 0 1px #111E6C;
-} 
 
 .button-search {
   position: absolute;
   color: #111E6C;
   border-color: transparent;
-  padding: 6px 6px 6px 15px !important;
+  padding: 15px !important;
 }
 
 .page-link {
@@ -141,10 +129,10 @@ ul.pagination {
   height: 3rem;
 }
 .custom-control.carousel-control-prev {
-  left: -3rem;
+  left: -2.5rem;
 }
 .custom-control.carousel-control-next {
-  right: -3rem;
+  right: -2.5rem;
 }
 
 *::-moz-placeholder {
@@ -450,7 +438,7 @@ section {
 .home-hero-bg {
   position: relative;
 }
-@media (min-width: 992px){
+@media (min-width: 1200px){
   .home-hero-bg:before {
     content: "";
     position: absolute;
@@ -465,7 +453,7 @@ section {
     mix-blend-mode: hard-light;
   }
 } 
-@media (max-width: 991.98px){
+@media (max-width: 1199.98px){
   .home-hero:before {
     content: "";
     position: absolute;

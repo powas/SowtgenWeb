@@ -22,14 +22,12 @@ include_once 'header.php';
         </div>
         <div class="container">
             <div class="row">
-                <div class="mt-n5">
-                    <div class="bg-white rounded-1 d-flex flex-column p-3">
-                        <form class="d-flex" role="search">
-                            <button class="btn button-search" type="submit"><i class="las la-search"></i></button>
-                            <input class="form-control-borde" type="search" placeholder="Buscador" aria-label="Buscador">
-                        </form>
+                <form role="search" style="margin-top:-28px;">
+                    <div class="d-flex shadow-sm rounded-1">
+                        <button class="btn button-search" type="submit"><i class="las la-search"></i></button>
+                        <input class="form-control  p-3 ps-5" type="search" placeholder="Buscador" aria-label="Buscador">
                     </div>
-                </div>
+                </form>
             </div>
         </div>
     </section>

@@ -10,11 +10,11 @@ include_once 'header.php';
   <section class="bg-color3" style="background-image: url(<?=BASE_PATH?>/img/home-bg.jpg);background-size: cover;background-position: center;">
     <div class="container">
       <div class="row flex-lg-row-reverse align-items-center home-hero">
-        <div class="col-lg-6 py-5 py-lg-6 home-hero-bg">
+        <div class="col-xl-6 py-5 py-xl-6 home-hero-bg">
           <img src="<?=BASE_PATH?>/img/home-hero.png" alt="SOWTGEN" title="SOWTGEN" class="img-fluid position-relative">
         </div>
-        <div class="col-lg-6 py-5 py-lg-6 z-0">
-          <div id="carouselExampleAutoplaying" class="carousel slide mb-5" data-bs-ride="carousel">
+        <div class="col-xl-6 py-5 py-xl-6 z-0">
+          <div id="carouselExampleAutoplaying" class="carousel slide mb-5 mx-4 mx-sm-0" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <h1 class="text-white lh-base">

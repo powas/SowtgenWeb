@@ -57,19 +57,11 @@ li:not(.nav-item) {
         box-shadow: 0 0 0 1px $color2;
     }
 }
-.form-control-borde {
-    padding: 13px;
-    border-color: #4579FF;
-    &:focus {
-        border-color: #111E6C;
-        box-shadow: 0 0 0 1px #111E6C;
-    }
-}
 .button-search {
     position: absolute;
     color: #111E6C;
     border-color: transparent;
-    padding: 6px 6px 6px 15px !important;
+    padding: 15px !important;
 }
 
 .page-link {
@@ -125,10 +117,10 @@ ul.pagination {
     height: 3rem;
 }
 .custom-control.carousel-control-prev {
-    left: -3rem;
+    left: -2.5rem;
 }
 .custom-control.carousel-control-next {
-    right: -3rem;
+    right: -2.5rem;
 }
 
 *::placeholder {
@@ -394,7 +386,7 @@ section {
 .home-hero-bg {
     position: relative;
     &:before {
-        @media (min-width: 992px){
+        @media (min-width: 1200px){
             content: "";
             position: absolute;
             background-color: #111E6C;
@@ -409,8 +401,7 @@ section {
         }           
     }
 }
-
-@media (max-width: 991.98px){
+@media (max-width: 1199.98px){
     .home-hero:before {
       content: "";
       position: absolute;
@@ -422,11 +413,11 @@ section {
       bottom: 0;
       mix-blend-mode: hard-light;
     } 
-  }
-
+}
 .max-width-60per {
     max-width: 60%;
 }
+
 .title-with-line {
     position: relative;
     &:after {
