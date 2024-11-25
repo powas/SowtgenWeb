@@ -87,8 +87,8 @@
               <a class="nav-link" href="<?=BASE_PATH?>/contacto">Contacto</a>
             </li>
           </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control" type="search" placeholder="Buscador" aria-label="Buscador">
+          <form class="d-flex" role="search" action="<?=BASE_PATH?>/buscador">
+            <input class="form-control" type="search" id="q" name="q" placeholder="Buscador" aria-label="Buscador">
             <button class="btn btn-outline-success" type="submit"><i class="las la-search"></i></button>
           </form>
         </div>

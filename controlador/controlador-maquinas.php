@@ -20,6 +20,34 @@ function cargarMaquina($slug)
     return $retorno;
 }
 
+function cargarMaquinas($search, $page = "") 
+{ 
+    $consulta = array();
+        
+    $campos     = "*";
+    $tabla      = "maquinas";
+    $inicio     = "";
+    $limite     = PAGINATION_NUMBER;
+
+    if (!empty($page) && is_numeric($page) && $page > 0) {
+        $inicio = ($page - 1) * PAGINATION_NUMBER;
+    } else {
+        $limite = "";
+    }
+    
+    $criterio = "WHERE titulo_maquina like '%" . $search . "%' ORDER BY id_maquina ASC";
+
+    if ($limite !== "") {
+        $criterio .= " LIMIT $inicio, $limite";
+    }
+    
+    $consulta   = obtenerPedido($campos, $tabla, $criterio);
+    
+    $retorno    = !empty($consulta) ? $consulta : array();
+    
+    return $retorno;
+}
+
 function cargarMaquinasMercados($id_mercado) 
 { 
     $consulta = array();

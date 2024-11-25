@@ -81,28 +81,38 @@ li:not(.nav-item) {
   padding: 8px 15px;
   background-color: unset;
   color: #111E6C;
+  border: none;
+}
+
+.page-link:focus {
+  background-color: unset;
+  box-shadow: none;
+}
+
+.page-link.selected {
   border: 1px solid #0d6efd;
+  border-radius: 50px !important;
 }
 
 .no-selected .page-link {
   border: unset;
 }
 
-.page-item:not(:first-child) .page-link {
+.page-item:not(.previous) .page-link, .page-item:not(.next) .page-link  {
   margin-left: 0px;
 }
 
-.page-item:last-child .page-link, .page-item:first-child .page-link {
+.page-item.next .page-link, .page-item.previous .page-link {
   border: none;
   color: #0d6efd !important;
 }
 
-.page-item:last-child {
-  padding-left: 30px;
+.page-item.next {
+  padding-left: 20px;
 }
 
-.page-item:first-child {
-  padding-right: 30px;
+.page-item.previous {
+  padding-right: 20px;
 }
 
 ul.pagination {
