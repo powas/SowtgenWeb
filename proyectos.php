@@ -48,7 +48,7 @@ include_once 'header.php';
 
                         echo '  <div class="modal fade modal-proyectos" id="modal-proyectos-'.$contadorProyectos.'" tabindex="-1" aria-labelledby="modal-proyectos-'.$contadorProyectos.'" aria-hidden="true">
                                     <div class="modal-dialog modal-xl modal-dialog-centered">
-                                        <div class="modal-content overflow-hidden d-flex flex-row flex-wrap-reverse">
+                                        <div class="modal-content overflow-hidden d-flex flex-row flex-wrap">
                                             <div class="col-12 col-lg-6 p-0">
                                                 <div id="carousel-proyectos-'.$contadorProyectos.'" class="carousel carousel-proyectos slide" data-bs-ride="carousel">
                                                     <div class="carousel-inner">';

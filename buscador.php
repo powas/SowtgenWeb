@@ -75,10 +75,12 @@ include_once 'header.php';
                     }
 
                     echo '  <div class="row py-4">
-                                <div class="col-12 col-lg-3 mb-5">
-                                    <img src="'.BASE_PATH.'/img/'.$paginaMaquina['slug_pagina'].'/'.$maquina['slug_maquina'].'/'.$maquina['foto_chica_maquina'].'" class="img-fluid">
+                                <div class="col-12 col-lg-3 mb-5 mb-lg-0">
+                                    <div class="h-100 bg-white overflow-hidden rounded-2 d-flex align-items-center">
+                                        <img src="'.BASE_PATH.'/img/'.$paginaMaquina['slug_pagina'].'/'.$maquina['slug_maquina'].'/'.$maquina['foto_chica_maquina'].'" class="img-fluid w-100">
+                                    </div>                                    
                                 </div>
-                                <div class="col-12 col-lg-9 bg-image text-left shadow-1-strong rounded ">
+                                <div class="col-12 col-lg-9">
                                     <h2 class="mb-4">'.$maquina["titulo_maquina"].'</h2>
                                     '.$maquina["descripcion_maquina"].'
                                     <a href="'.BASE_PATH.'/'.$paginaMaquina['slug_pagina'].'/'.$maquina['slug_maquina'].'" class="btn btn-ver-mas" type="submit"><strong>Ver Más </strong><img src="'.BASE_PATH.'/img/arrow.svg"></a>
