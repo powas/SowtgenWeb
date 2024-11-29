@@ -91,9 +91,6 @@ include_once 'header.php';
           <h3>Confían en nosotros</h3>
           <div class="owl-brands owl-carousel owl-theme mb-5">
                 <div class="item">
-                  <img src="<?=BASE_PATH?>/img/empresas/arcor-logo.jpg" alt="Arcor" title="Arcor">
-                </div>
-                <div class="item">
                   <img src="<?=BASE_PATH?>/img/empresas/branca-logo.jpg" alt="Branca" title="Branca">
                 </div>
                 <div class="item">
@@ -110,9 +107,6 @@ include_once 'header.php';
                 </div>
                 <div class="item">
                   <img src="<?=BASE_PATH?>/img/empresas/givaudan-logo.jpg" alt="Givaudan" title="Givaudan">
-                </div>
-                <div class="item">
-                  <img src="<?=BASE_PATH?>/img/empresas/grupo-riquelme-logo.jpg" alt="Grupo Riquelme" title="Grupo Riquelme">
                 </div>
                 <div class="item">
                   <img src="<?=BASE_PATH?>/img/empresas/isover-logo.jpg" alt="Isover" title="Isover">
