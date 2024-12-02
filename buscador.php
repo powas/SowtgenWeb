@@ -77,7 +77,7 @@ include_once 'header.php';
                     echo '  <div class="row py-4">
                                 <div class="col-12 col-lg-3 mb-5 mb-lg-0">
                                     <div class="h-100 bg-white overflow-hidden rounded-2 d-flex align-items-center">
-                                        <img src="'.BASE_PATH.'/img/'.$paginaMaquina['slug_pagina'].'/'.$maquina['slug_maquina'].'/'.$maquina['foto_chica_maquina'].'" class="img-fluid w-100">
+                                        <img src="'.BASE_PATH.'/img/'.$paginaMaquina['slug_pagina'].'/'.$maquina['slug_maquina'].'/'.$maquina['foto_grande_maquina'].'" class="img-fluid w-100">
                                     </div>                                    
                                 </div>
                                 <div class="col-12 col-lg-9">
